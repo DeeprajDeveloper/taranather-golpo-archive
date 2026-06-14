@@ -1,3 +1,5 @@
+@use './styles/mixins' as *;
+
 .page-layout {
   display: grid;
   grid-template-columns: minmax(200px, 240px) minmax(0, 1fr);
@@ -11,9 +13,82 @@
   min-width: 0;
 }
 
-@media (max-width: 900px) {
-  .page-layout {
+.search-toolbar {
+  display: flex;
+  align-items: stretch;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.search-toolbar .search-bar-sticky {
+  flex: 1;
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.filter-toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {.page-layout {
     grid-template-columns: 1fr;
-    gap: var(--space-6);
+    gap: var(--space-4);
+    padding-top: var(--space-4);
+  }
+
+  .search-toolbar {
+    position: sticky;
+    top: var(--header-offset);
+    z-index: 90;
+    padding: var(--space-2) 0 var(--space-3);
+    margin-bottom: var(--space-3);
+    background: var(--color-bg-base);
+    transition: top var(--duration-normal) var(--ease-out);
+  }
+
+  html.header-collapsed .search-toolbar {
+    padding-top: var(--space-3);
+  }
+
+  .filter-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-shrink: 0;
+    height: 44px;
+    padding: 0 var(--space-3);
+    background: var(--color-bg-surface);
+    border: var(--border-thin) solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-secondary);
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: border-color var(--duration-fast) var(--ease-out), color var(--duration-fast) var(--ease-out);
+
+    @include focus-border;
+
+    &:hover {
+      border-color: var(--color-border-accent);
+      color: var(--color-text-primary);
+    }
+
+    &--active {
+      border-color: var(--color-border-accent);
+      color: var(--color-accent);
+    }
+  }
+
+  .filter-toggle__label {
+    display: none;
+  }
+
+  .search-toolbar .search-bar-sticky {
+    position: static;
+    padding: 0;
+    background: transparent;
   }
 }

@@ -1,0 +1,22 @@
+.filter-panel__author {
+  margin-top: var(--space-2);
+}
+
+.filter-panel .filter-select {
+  max-width: none;
+  width: 100%;
+  border-radius: var(--radius-pill);
+}
+
+.filter-panel .filter-strip--vertical {
+  flex-direction: column;
+  align-items: stretch;
+  overflow-x: visible;
+  gap: var(--space-2);
+}
+
+.filter-panel .filter-strip--vertical .filter-pill {
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+}

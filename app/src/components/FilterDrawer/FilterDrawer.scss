@@ -1,0 +1,71 @@
+@use '../../styles/mixins' as *;
+
+.filter-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 250;
+}
+
+.filter-drawer__backdrop {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+}
+
+.filter-drawer__sheet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: min(85vh, 640px);
+  background: var(--color-bg-surface);
+  border-top: var(--border-thin) solid var(--color-border);
+  box-shadow: var(--shadow-hover);
+}
+
+.filter-drawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-shrink: 0;
+  padding: var(--space-4) var(--space-5);
+  border-bottom: var(--border-thin) solid var(--color-border);
+}
+
+.filter-drawer__title {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0;
+}
+
+.filter-drawer__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: var(--border-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  transition: var(--transition-base);
+
+  @include focus-border;
+
+  &:hover {
+    color: var(--color-text-primary);
+    border-color: var(--color-border-accent);
+  }
+}
+
+.filter-drawer__body {
+  overflow-y: auto;
+  padding: var(--space-5);
+}

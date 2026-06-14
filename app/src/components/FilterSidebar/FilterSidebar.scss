@@ -21,36 +21,12 @@
   border-bottom: var(--border-thin) solid var(--color-border);
 }
 
-.filter-sidebar__author {
-  margin-top: var(--space-2);
-}
-
 .filter-sidebar .filter-group {
   margin-bottom: var(--space-5);
 }
 
-.filter-sidebar .filter-select {
-  max-width: none;
-  width: 100%;
-  border-radius: var(--radius-pill);
-}
-
-.filter-sidebar .filter-strip--vertical {
-  flex-direction: column;
-  align-items: stretch;
-  overflow-x: visible;
-  gap: var(--space-2);
-}
-
-.filter-sidebar .filter-strip--vertical .filter-pill {
-  width: 100%;
-  justify-content: flex-start;
-  text-align: left;
-}
-
 @media (max-width: 900px) {
   .filter-sidebar {
-    position: static;
-    top: auto;
+    display: none;
   }
 }

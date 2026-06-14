@@ -66,6 +66,22 @@
   color: var(--color-text-ghost);
 }
 
+@media (max-width: 900px) {
+  .page-hero {
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-3);
+    max-height: 120px;
+  }
+
+  .page-hero__heading em {
+    font-size: var(--text-lg);
+  }
+
+  .page-hero__subtext {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .page-hero {
     transition: none;

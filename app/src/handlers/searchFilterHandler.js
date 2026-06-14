@@ -93,6 +93,14 @@ export function isAnyFilterActive(filters) {
   );
 }
 
+export function isPanelFilterActive(filters) {
+  return (
+    !filters.lineages.includes(ALL) ||
+    !filters.storyTypes.includes(ALL) ||
+    filters.authorId !== ALL
+  );
+}
+
 export function shouldHideHero(filters) {
   return isAnyFilterActive(filters);
 }
