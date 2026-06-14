@@ -137,7 +137,8 @@ function App() {
       <BackToTop visible={showBackToTop} />
 
       <FilterDrawer
-        isOpen={filterDrawer.isOpen}
+        isVisible={filterDrawer.isVisible}
+        isActive={filterDrawer.isActive}
         onClose={filterDrawer.close}
         filters={filters}
         setFilters={setFilters}
@@ -146,7 +147,8 @@ function App() {
       />
 
       <FeedbackModal
-        isOpen={feedback.isOpen}
+        isVisible={feedback.isVisible}
+        isActive={feedback.isActive}
         form={feedback.form}
         errors={feedback.errors}
         status={feedback.status}
@@ -157,7 +159,11 @@ function App() {
         onSubmit={feedback.handleSubmit}
       />
 
-      <AboutModal isOpen={about.isOpen} onClose={about.close} />
+      <AboutModal
+        isVisible={about.isVisible}
+        isActive={about.isActive}
+        onClose={about.close}
+      />
     </>
   );
 }

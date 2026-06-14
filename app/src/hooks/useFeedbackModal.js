@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import {
   createInitialFeedbackForm,
   getFeedbackSuccessMessage,
@@ -7,34 +7,35 @@ import {
   updateFeedbackField,
   validateFeedbackForm,
 } from '../handlers/feedbackHandler';
+import { useDrawerAnimation } from './useDrawerAnimation';
 
 export function useFeedbackModal() {
-  const [isOpen, setIsOpen] = useState(false);
   const [form, setForm] = useState(createInitialFeedbackForm);
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState('idle');
   const [statusMessage, setStatusMessage] = useState('');
 
-  const open = useCallback(() => {
-    setIsOpen(true);
+  const resetModalState = useCallback(() => {
     setStatus('idle');
     setStatusMessage('');
     setErrors({});
   }, []);
 
+  const drawer = useDrawerAnimation({ onClosed: resetModalState });
+
+  const open = useCallback(() => {
+    resetModalState();
+    drawer.open();
+  }, [drawer, resetModalState]);
+
   const close = useCallback(() => {
-    setIsOpen(false);
-    setStatus('idle');
-    setStatusMessage('');
-    setErrors({});
-  }, []);
+    drawer.close();
+  }, [drawer]);
 
   const reset = useCallback(() => {
     setForm(createInitialFeedbackForm());
-    setErrors({});
-    setStatus('idle');
-    setStatusMessage('');
-  }, []);
+    resetModalState();
+  }, [resetModalState]);
 
   const updateField = useCallback((field, value) => {
     setForm((current) => updateFeedbackField(current, field, value));
@@ -69,24 +70,10 @@ export function useFeedbackModal() {
     setForm(createInitialFeedbackForm());
   }, [form]);
 
-  useEffect(() => {
-    if (!isOpen) return undefined;
-
-    const onKeyDown = (event) => {
-      if (event.key === 'Escape') close();
-    };
-
-    document.body.style.overflow = 'hidden';
-    window.addEventListener('keydown', onKeyDown);
-
-    return () => {
-      document.body.style.overflow = '';
-      window.removeEventListener('keydown', onKeyDown);
-    };
-  }, [isOpen, close]);
-
   return {
-    isOpen,
+    isOpen: drawer.isVisible,
+    isVisible: drawer.isVisible,
+    isActive: drawer.isActive,
     form,
     errors,
     status,

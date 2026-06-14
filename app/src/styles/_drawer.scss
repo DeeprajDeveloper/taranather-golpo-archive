@@ -1,0 +1,24 @@
+@mixin bottom-sheet-drawer($block) {
+  .#{$block}__sheet,
+  .#{$block}__dialog {
+    transform: translateY(100%);
+    transition: transform var(--duration-normal) var(--ease-out);
+    will-change: transform;
+  }
+
+  .#{$block}__backdrop {
+    opacity: 0;
+    transition: opacity var(--duration-normal) var(--ease-out);
+  }
+
+  .#{$block}--open {
+    .#{$block}__sheet,
+    .#{$block}__dialog {
+      transform: translateY(0);
+    }
+
+    .#{$block}__backdrop {
+      opacity: 1;
+    }
+  }
+}

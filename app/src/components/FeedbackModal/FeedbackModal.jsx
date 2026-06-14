@@ -11,7 +11,8 @@ function CloseIcon() {
 }
 
 export function FeedbackModal({
-  isOpen,
+  isVisible,
+  isActive,
   form,
   errors,
   status,
@@ -21,10 +22,13 @@ export function FeedbackModal({
   onFieldChange,
   onSubmit,
 }) {
-  if (!isOpen) return null;
+  if (!isVisible) return null;
 
   return (
-    <div className="feedback-modal" role="presentation">
+    <div
+      className={`feedback-modal${isActive ? ' feedback-modal--open' : ''}`}
+      role="presentation"
+    >
       <button
         type="button"
         className="feedback-modal__backdrop"

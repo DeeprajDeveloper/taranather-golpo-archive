@@ -1,4 +1,7 @@
 @use '../../styles/mixins' as *;
+@use '../../styles/drawer' as drawer;
+
+@include drawer.bottom-sheet-drawer('filter-drawer');
 
 .filter-drawer {
   position: fixed;
@@ -21,7 +24,7 @@
   bottom: 0;
   display: flex;
   flex-direction: column;
-  max-height: min(85vh, 640px);
+  max-height: min(85vh, 700px);
   background: var(--color-bg-surface);
   border-top: var(--border-thin) solid var(--color-border);
   box-shadow: var(--shadow-hover);

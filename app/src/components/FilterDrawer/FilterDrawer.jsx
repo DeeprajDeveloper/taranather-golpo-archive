@@ -11,17 +11,21 @@ function CloseIcon() {
 }
 
 export function FilterDrawer({
-  isOpen,
+  isVisible,
+  isActive,
   onClose,
   filters,
   setFilters,
   filterOptions,
   onFeedbackClick,
 }) {
-  if (!isOpen) return null;
+  if (!isVisible) return null;
 
   return (
-    <div className="filter-drawer" role="presentation">
+    <div
+      className={`filter-drawer${isActive ? ' filter-drawer--open' : ''}`}
+      role="presentation"
+    >
       <button
         type="button"
         className="filter-drawer__backdrop"

@@ -71,8 +71,8 @@ function SourcePill({ label, url }) {
   );
 }
 
-export function AboutModal({ isOpen, onClose }) {
-  if (!isOpen) return null;
+export function AboutModal({ isVisible, isActive, onClose }) {
+  if (!isVisible) return null;
 
   const {
     eyebrow,
@@ -90,7 +90,10 @@ export function AboutModal({ isOpen, onClose }) {
   } = getAboutContent();
 
   return (
-    <div className="about-modal" role="presentation">
+    <div
+      className={`about-modal${isActive ? ' about-modal--open' : ''}`}
+      role="presentation"
+    >
       <button
         type="button"
         className="about-modal__backdrop"
