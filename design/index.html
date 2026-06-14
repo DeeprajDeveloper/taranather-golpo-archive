@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taranath Tantrik — Design System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#" class="site-header__title">
+      <span>Design System</span>
+      তারানাথের গল্প
+    </a>
+    <div class="site-header__actions">
+      <span class="site-header__badge">v2.0</span>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"/>
+          <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"/>
+          <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"/>
+          <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <p class="page-hero__eyebrow">Interactive Style Guide</p>
+    <h1 class="page-hero__heading">Stillness, Dread &amp; Mystery</h1>
+    <p class="page-hero__subtext">
+      A design system built around atmospheric Bengali mysticism — sparse, dark,
+      with deliberate moments of unease. Toggle fog mode above. Click any color swatch to copy its hex value.
+    </p>
+    <div class="page-hero__divider"></div>
+  </section>
+
+  <div class="ds-layout">
+
+    <nav class="ds-nav" aria-label="Design system sections">
+      <p class="ds-nav__title">Contents</p>
+      <a href="#philosophy" class="ds-nav__link">Philosophy</a>
+      <a href="#colors" class="ds-nav__link">Colors</a>
+      <a href="#typography" class="ds-nav__link">Typography</a>
+      <a href="#spacing" class="ds-nav__link">Spacing</a>
+      <a href="#shadows" class="ds-nav__link">Shadows</a>
+      <a href="#tags" class="ds-nav__link">Tags</a>
+      <a href="#header" class="ds-nav__link">Header</a>
+      <a href="#story-card" class="ds-nav__link">Story Card</a>
+      <a href="#filters" class="ds-nav__link">Filters</a>
+      <a href="#loading" class="ds-nav__link">Loading</a>
+      <a href="#footer" class="ds-nav__link">Footer</a>
+    </nav>
+
+    <main class="ds-main">
+
+      <!-- Philosophy -->
+      <section id="philosophy" class="ds-section">
+        <h2 class="ds-section__title">Design Philosophy</h2>
+        <p class="ds-section__desc">
+          Minimal surface, maximum atmosphere. Cards are the protagonist.
+          One moment of strangeness per page.
+        </p>
+        <div class="ds-panel">
+          <ul class="principles-list">
+            <li><strong>Minimal surface, maximum atmosphere.</strong> Nothing decorates unless it unnerves.</li>
+            <li><strong>Cards are the protagonist.</strong> The layout exists to frame them.</li>
+            <li><strong>Legibility over mood.</strong> Mood is created through color and type, never at the cost of readability.</li>
+            <li><strong>One moment of strangeness per page.</strong> A texture, a flicker, a red bleed — used once, used well.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Colors -->
+      <section id="colors" class="ds-section">
+        <h2 class="ds-section__title">Color System</h2>
+        <p class="ds-section__desc">
+          Dark mode is the designed experience — candlelight in a dark room.
+          Light mode is fog mode: pale, sickly, overcast.
+        </p>
+
+        <p class="ds-panel__label" style="margin-bottom: var(--space-4);">Backgrounds</p>
+        <div class="color-grid" style="margin-bottom: var(--space-8);">
+          <button class="color-swatch" data-token="--color-bg-base" data-hex="#0A0A0B">
+            <div class="color-swatch__preview" style="background: var(--color-bg-base);"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">bg-base</span>
+              <span class="color-swatch__hex">#0A0A0B</span>
+            </div>
+          </button>
+          <button class="color-swatch" data-token="--color-bg-surface" data-hex="#111113">
+            <div class="color-swatch__preview" style="background: var(--color-bg-surface);"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">bg-surface</span>
+              <span class="color-swatch__hex">#111113</span>
+            </div>
+          </button>
+          <button class="color-swatch" data-token="--color-bg-elevated" data-hex="#1A1A1E">
+            <div class="color-swatch__preview" style="background: var(--color-bg-elevated);"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">bg-elevated</span>
+              <span class="color-swatch__hex">#1A1A1E</span>
+            </div>
+          </button>
+          <button class="color-swatch" data-token="--color-bg-inset" data-hex="#0D0D10">
+            <div class="color-swatch__preview" style="background: var(--color-bg-inset);"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">bg-inset</span>
+              <span class="color-swatch__hex">#0D0D10</span>
+            </div>
+          </button>
+        </div>
+
+        <p class="ds-panel__label" style="margin-bottom: var(--space-4);">Foregrounds</p>
+        <div class="color-grid" style="margin-bottom: var(--space-8);">
+          <button class="color-swatch" data-token="--color-text-primary" data-hex="#E8E0D0">
+            <div class="color-swatch__preview" style="background: var(--color-text-primary);"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">text-primary</span>
+              <span class="color-swatch__hex">#E8E0D0</span>
+            </div>
+          </button>
+          <button class="color-swatch" data-token="--color-text-secondary" data-hex="#8A8070">
+            <div class="color-swatch__preview" style="background: var(--color-text-secondary);"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">text-secondary</span>
+              <span class="color-swatch__hex">#8A8070</span>
+            </div>
+          </button>
+          <button class="color-swatch" data-token="--color-text-ghost" data-hex="#4A4540">
+            <div class="color-swatch__preview" style="background: var(--color-text-ghost);"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">text-ghost</span>
+              <span class="color-swatch__hex">#4A4540</span>
+            </div>
+          </button>
+        </div>
+
+        <p class="ds-panel__label" style="margin-bottom: var(--space-4);">Accent — Ember Red</p>
+        <div class="color-grid" style="margin-bottom: var(--space-8);">
+          <button class="color-swatch" data-token="--color-accent" data-hex="#C0392B">
+            <div class="color-swatch__preview" style="background: var(--color-accent);"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">accent</span>
+              <span class="color-swatch__hex">#C0392B</span>
+            </div>
+          </button>
+          <button class="color-swatch" data-token="--color-accent-bright" data-hex="#E05545">
+            <div class="color-swatch__preview" style="background: var(--color-accent-bright);"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">accent-bright</span>
+              <span class="color-swatch__hex">#E05545</span>
+            </div>
+          </button>
+          <button class="color-swatch" data-token="--color-border-accent" data-hex="#6B2020">
+            <div class="color-swatch__preview" style="background: var(--color-border-accent);"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">border-accent</span>
+              <span class="color-swatch__hex">#6B2020</span>
+            </div>
+          </button>
+        </div>
+
+        <p class="ds-panel__label" style="margin-bottom: var(--space-4);">Functional</p>
+        <div class="color-grid">
+          <button class="color-swatch" data-token="--color-success" data-hex="#2E5E3A">
+            <div class="color-swatch__preview" style="background: var(--color-success);"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">success</span>
+              <span class="color-swatch__hex">#2E5E3A</span>
+            </div>
+          </button>
+          <button class="color-swatch" data-token="--color-warning" data-hex="#6B4A00">
+            <div class="color-swatch__preview" style="background: var(--color-warning);"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">warning</span>
+              <span class="color-swatch__hex">#6B4A00</span>
+            </div>
+          </button>
+          <button class="color-swatch" data-token="--color-error" data-hex="#C0392B">
+            <div class="color-swatch__preview" style="background: var(--color-error);"></div>
+            <div class="color-swatch__info">
+              <span class="color-swatch__name">error</span>
+              <span class="color-swatch__hex">#C0392B</span>
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <!-- Typography -->
+      <section id="typography" class="ds-section">
+        <h2 class="ds-section__title">Typography</h2>
+        <p class="ds-section__desc">
+          Cormorant Garamond for display, Inter for body, JetBrains Mono for labels.
+          Never mix more than two families in a single component.
+        </p>
+        <div class="ds-panel">
+          <div class="type-specimen">
+            <p class="type-specimen__meta">Display · Cormorant Garamond · --text-4xl · weight 300</p>
+            <p class="type-display-xl">Stories from the dark margins</p>
+          </div>
+          <div class="type-specimen">
+            <p class="type-specimen__meta">Display · --text-3xl</p>
+            <p class="type-display-lg">of Bengal</p>
+          </div>
+          <div class="type-specimen">
+            <p class="type-specimen__meta">Section heading · --text-2xl</p>
+            <p class="type-display-md">All Stories</p>
+          </div>
+          <div class="type-specimen">
+            <p class="type-specimen__meta">Card title · --text-xl</p>
+            <p class="type-display-card">Madhusundari Debi'r Abirbhab</p>
+          </div>
+          <div class="type-specimen">
+            <p class="type-specimen__meta">Body · Inter · --text-base</p>
+            <p class="type-body">Taranath knows things the living prefer not to name. He walks the thin membrane between worlds, carrying stories that settle in corners and wait.</p>
+          </div>
+          <div class="type-specimen">
+            <p class="type-specimen__meta">Secondary body · --text-sm</p>
+            <p class="type-body-sm">A merchant's cart is found overturned at the crossroads. Taranath knows this road.</p>
+          </div>
+          <div class="type-specimen">
+            <p class="type-specimen__meta">Mono label · JetBrains Mono · --text-xs · all caps</p>
+            <p class="type-mono">EP 04 · 23 MIN · CANONICAL</p>
+          </div>
+          <div class="type-specimen">
+            <p class="type-specimen__meta">Bengali subtitle · Cormorant Garamond italic</p>
+            <p class="type-display-card" style="font-style: italic; color: var(--color-text-secondary);">মধুসুন্দরী দেবীর আবির্ভাব</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Spacing -->
+      <section id="spacing" class="ds-section">
+        <h2 class="ds-section__title">Spacing</h2>
+        <p class="ds-section__desc">4px base unit. All spacing values are multiples of 4.</p>
+        <div class="ds-panel">
+          <div class="spacing-grid">
+            <div class="spacing-row"><span class="spacing-row__label">--space-1</span><div class="spacing-row__bar" style="width: 4px;"></div><span class="type-mono">4px</span></div>
+            <div class="spacing-row"><span class="spacing-row__label">--space-2</span><div class="spacing-row__bar" style="width: 8px;"></div><span class="type-mono">8px</span></div>
+            <div class="spacing-row"><span class="spacing-row__label">--space-3</span><div class="spacing-row__bar" style="width: 12px;"></div><span class="type-mono">12px</span></div>
+            <div class="spacing-row"><span class="spacing-row__label">--space-4</span><div class="spacing-row__bar" style="width: 16px;"></div><span class="type-mono">16px</span></div>
+            <div class="spacing-row"><span class="spacing-row__label">--space-6</span><div class="spacing-row__bar" style="width: 24px;"></div><span class="type-mono">24px · card padding</span></div>
+            <div class="spacing-row"><span class="spacing-row__label">--space-8</span><div class="spacing-row__bar" style="width: 32px;"></div><span class="type-mono">32px · section gaps</span></div>
+            <div class="spacing-row"><span class="spacing-row__label">--space-12</span><div class="spacing-row__bar" style="width: 48px;"></div><span class="type-mono">48px</span></div>
+            <div class="spacing-row"><span class="spacing-row__label">--space-20</span><div class="spacing-row__bar" style="width: 80px;"></div><span class="type-mono">80px · hero breathing room</span></div>
+            <div class="spacing-row"><span class="spacing-row__label">--space-32</span><div class="spacing-row__bar" style="width: 128px;"></div><span class="type-mono">128px · major breaks</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shadows -->
+      <section id="shadows" class="ds-section">
+        <h2 class="ds-section__title">Shadows &amp; Shape</h2>
+        <p class="ds-section__desc">Atmospheric, not material. Cards use --radius-md (4px) — no large rounded corners.</p>
+        <div class="shadow-grid">
+          <div class="shadow-demo shadow-demo--card">shadow-card</div>
+          <div class="shadow-demo shadow-demo--hover">shadow-hover</div>
+          <div class="shadow-demo shadow-demo--glow">shadow-glow</div>
+        </div>
+      </section>
+
+      <!-- Tags -->
+      <section id="tags" class="ds-section">
+        <h2 class="ds-section__title">Tags / Pills</h2>
+        <p class="ds-section__desc">Small labels indicating category, lineage, or story type.</p>
+        <div class="ds-panel">
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-3);">
+            <span class="tag">Supernatural</span>
+            <span class="tag">Ghost</span>
+            <span class="tag">Tantrik</span>
+            <span class="tag tag--accent">Canonical</span>
+            <span class="tag tag--accent">Fan Fiction</span>
+            <span class="tag">Short Story</span>
+            <span class="tag">Sub Narrative</span>
+            <span class="tag tag--success">Novel</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Header -->
+      <section id="header" class="ds-section">
+        <h2 class="ds-section__title">Site Header</h2>
+        <p class="ds-section__desc">Minimal sticky strip with title and theme toggle. The live header above is the reference implementation.</p>
+        <div class="component-preview component-preview--header">
+          <header class="site-header" style="position: relative;">
+            <a href="#" class="site-header__title">
+              <span>A story collection of Taranath Tantrik</span>
+              তারানাথের গল্প
+            </a>
+            <button class="theme-toggle" aria-hidden="true" tabindex="-1">
+              <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </header>
+        </div>
+      </section>
+
+      <!-- Story Card -->
+      <section id="story-card" class="ds-section">
+        <h2 class="ds-section__title">Story Card</h2>
+        <p class="ds-section__desc">The central unit. Hover to see border glow and thumbnail lift. Scroll reveal animates cards into view.</p>
+
+        <div class="section-label">Canonical Stories</div>
+        <div class="card-grid">
+          <a href="#" class="story-card reveal" data-demo-card
+             data-lineage="canonical" data-type="short_story" data-author="bibhutibhushan"
+             aria-label="Madhusundari Debi'r Abirbhab">
+            <div class="story-card__thumbnail story-card__thumbnail--placeholder"><span>Thumbnail</span></div>
+            <div class="story-card__body">
+              <span class="story-card__meta">TT-002 · Short Story</span>
+              <h2 class="story-card__title">Madhusundari Debi'r Abirbhab</h2>
+              <p class="story-card__subtitle">মধুসুন্দরী দেবীর আবির্ভাব</p>
+              <p class="story-card__description">The apparition of Madhusundari Devi — one of Bibhutibhushan's foundational Taranath tales.</p>
+              <div class="story-card__tags">
+                <span class="tag tag--accent">Canonical</span>
+                <span class="tag">Bibhutibhushan</span>
+              </div>
+              <span class="story-card__cta" aria-hidden="true">▶ Watch on YouTube →</span>
+            </div>
+          </a>
+
+          <a href="#" class="story-card reveal" data-demo-card
+             data-lineage="canonical" data-type="short_story" data-author="taradas"
+             aria-label="Mukh">
+            <div class="story-card__thumbnail story-card__thumbnail--placeholder"><span>Thumbnail</span></div>
+            <div class="story-card__body">
+              <span class="story-card__meta">TT-012 · Short Story</span>
+              <h2 class="story-card__title">Mukh</h2>
+              <p class="story-card__subtitle">মুখ</p>
+              <p class="story-card__description">A face appears where none should be. Taradas Bandyopadhyay's unsettling continuation of the legacy.</p>
+              <div class="story-card__tags">
+                <span class="tag tag--accent">Canonical</span>
+                <span class="tag">Taradas</span>
+              </div>
+              <span class="story-card__cta" aria-hidden="true">▶ Watch on YouTube →</span>
+            </div>
+          </a>
+
+          <a href="#" class="story-card reveal" data-demo-card
+             data-lineage="canonical" data-type="novel" data-author="taradas"
+             aria-label="Alatchakra">
+            <div class="story-card__thumbnail story-card__thumbnail--placeholder"><span>Thumbnail</span></div>
+            <div class="story-card__body">
+              <span class="story-card__meta">TT-018 · Novel</span>
+              <h2 class="story-card__title">Alatchakra</h2>
+              <p class="story-card__subtitle">আলাতচক্র</p>
+              <p class="story-card__description">The circle of fire — a full novel in the Taranath universe by Taradas Bandyopadhyay.</p>
+              <div class="story-card__tags">
+                <span class="tag tag--accent">Canonical</span>
+                <span class="tag">Novel</span>
+              </div>
+              <span class="story-card__cta" aria-hidden="true">▶ Watch on YouTube →</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Filters -->
+      <section id="filters" class="ds-section">
+        <h2 class="ds-section__title">Filter Bar</h2>
+        <p class="ds-section__desc">
+          Interactive demo — filter stories by lineage, type, and author.
+          This mirrors the client-side filtering your app will use with master_data.json.
+        </p>
+
+        <div class="filter-bar">
+          <select id="filter-lineage" class="filter-select" aria-label="Filter by lineage">
+            <option value="">All lineages</option>
+            <option value="canonical">Canonical</option>
+            <option value="fan_fiction">Fan fiction</option>
+          </select>
+          <select id="filter-type" class="filter-select" aria-label="Filter by story type">
+            <option value="">All types</option>
+            <option value="short_story">Short story</option>
+            <option value="novel">Novel</option>
+            <option value="fan_fiction">Fan fiction</option>
+          </select>
+          <select id="filter-author" class="filter-select" aria-label="Filter by author">
+            <option value="">All authors</option>
+            <option value="bibhutibhushan">Bibhutibhushan</option>
+            <option value="taradas">Taradas</option>
+            <option value="debjani">Debjani Chatterjee</option>
+          </select>
+          <span id="filter-count" class="filter-count">6 of 6 stories</span>
+        </div>
+
+        <div class="section-label">Filtered Results</div>
+        <div class="card-grid">
+          <a href="#" class="story-card" data-demo-card
+             data-lineage="canonical" data-type="short_story" data-author="bibhutibhushan">
+            <div class="story-card__thumbnail story-card__thumbnail--placeholder"><span>TT-002</span></div>
+            <div class="story-card__body">
+              <span class="story-card__meta">Bibhutibhushan · Canonical</span>
+              <h2 class="story-card__title">Madhusundari Debi'r Abirbhab</h2>
+              <span class="story-card__cta">▶ Watch →</span>
+            </div>
+          </a>
+          <a href="#" class="story-card" data-demo-card
+             data-lineage="canonical" data-type="short_story" data-author="taradas">
+            <div class="story-card__thumbnail story-card__thumbnail--placeholder"><span>TT-012</span></div>
+            <div class="story-card__body">
+              <span class="story-card__meta">Taradas · Canonical</span>
+              <h2 class="story-card__title">Mukh</h2>
+              <span class="story-card__cta">▶ Watch →</span>
+            </div>
+          </a>
+          <a href="#" class="story-card" data-demo-card
+             data-lineage="canonical" data-type="novel" data-author="taradas">
+            <div class="story-card__thumbnail story-card__thumbnail--placeholder"><span>TT-018</span></div>
+            <div class="story-card__body">
+              <span class="story-card__meta">Taradas · Novel</span>
+              <h2 class="story-card__title">Alatchakra</h2>
+              <span class="story-card__cta">▶ Watch →</span>
+            </div>
+          </a>
+          <a href="#" class="story-card" data-demo-card
+             data-lineage="fan_fiction" data-type="fan_fiction" data-author="debjani">
+            <div class="story-card__thumbnail story-card__thumbnail--placeholder"><span>GJ-001</span></div>
+            <div class="story-card__body">
+              <span class="story-card__meta">Debjani · Fan fiction</span>
+              <h2 class="story-card__title">Prologue — The Return</h2>
+              <span class="story-card__cta">▶ Watch →</span>
+            </div>
+          </a>
+          <a href="#" class="story-card" data-demo-card
+             data-lineage="fan_fiction" data-type="fan_fiction" data-author="debjani">
+            <div class="story-card__thumbnail story-card__thumbnail--placeholder"><span>GJ-014</span></div>
+            <div class="story-card__body">
+              <span class="story-card__meta">Debjani · Fan fiction</span>
+              <h2 class="story-card__title">The Crossroads at Midnight</h2>
+              <span class="story-card__cta">▶ Watch →</span>
+            </div>
+          </a>
+          <a href="#" class="story-card" data-demo-card
+             data-lineage="fan_fiction" data-type="fan_fiction" data-author="debjani">
+            <div class="story-card__thumbnail story-card__thumbnail--placeholder"><span>GJ-042</span></div>
+            <div class="story-card__body">
+              <span class="story-card__meta">Debjani · Fan fiction</span>
+              <h2 class="story-card__title">Brahmokal Tantrik — Part I</h2>
+              <span class="story-card__cta">▶ Watch →</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Loading -->
+      <section id="loading" class="ds-section">
+        <h2 class="ds-section__title">Loading State</h2>
+        <p class="ds-section__desc">Skeleton cards pulse while story data loads from JSON.</p>
+        <button id="skeleton-toggle" class="filter-select" style="margin-bottom: var(--space-6);">Show loading state</button>
+
+        <div id="skeleton-demo" class="card-grid" style="display: none;">
+          <div class="card-skeleton">
+            <div class="card-skeleton__image"></div>
+            <div class="card-skeleton__body">
+              <div class="card-skeleton__line card-skeleton__line--short"></div>
+              <div class="card-skeleton__line card-skeleton__line--medium"></div>
+              <div class="card-skeleton__line card-skeleton__line--long"></div>
+              <div class="card-skeleton__line card-skeleton__line--medium"></div>
+            </div>
+          </div>
+          <div class="card-skeleton">
+            <div class="card-skeleton__image"></div>
+            <div class="card-skeleton__body">
+              <div class="card-skeleton__line card-skeleton__line--short"></div>
+              <div class="card-skeleton__line card-skeleton__line--medium"></div>
+              <div class="card-skeleton__line card-skeleton__line--long"></div>
+            </div>
+          </div>
+          <div class="card-skeleton">
+            <div class="card-skeleton__image"></div>
+            <div class="card-skeleton__body">
+              <div class="card-skeleton__line card-skeleton__line--short"></div>
+              <div class="card-skeleton__line card-skeleton__line--long"></div>
+              <div class="card-skeleton__line card-skeleton__line--medium"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cards-demo" class="card-grid">
+          <a href="#" class="story-card">
+            <div class="story-card__thumbnail story-card__thumbnail--placeholder"><span>Loaded</span></div>
+            <div class="story-card__body">
+              <span class="story-card__meta">Loaded state</span>
+              <h2 class="story-card__title">Content appears here</h2>
+              <p class="story-card__description">After master_data.json is fetched and parsed.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section id="footer" class="ds-section">
+        <h2 class="ds-section__title">Footer</h2>
+        <p class="ds-section__desc">Quiet attribution and disclaimer. No affiliation claims.</p>
+        <div class="component-preview">
+          <footer class="site-footer" style="margin-top: 0; padding: var(--space-8) 0;">
+            <p class="site-footer__attribution">Stories by Bibhutibhushan Bandyopadhyay</p>
+            <p class="site-footer__text">
+              THIS SITE HAS NO AFFILIATION WITH ANY PUBLISHER OR RIGHTS HOLDER.<br>
+              ALL VIDEO CONTENT IS HOSTED ON YOUTUBE.
+            </p>
+          </footer>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer container">
+    <p class="site-footer__attribution">Taranath Tantrik Design System · v1.0</p>
+    <p class="site-footer__text">PLAIN CSS · VANILLA JS · NO FRAMEWORK</p>
+  </footer>
+
+  <div id="ds-toast" class="ds-toast" role="status" aria-live="polite"></div>
+
+  <script src="scripts/theme.js"></script>
+  <script src="scripts/scroll-reveal.js"></script>
+  <script src="scripts/showcase.js"></script>
+</body>
+</html>

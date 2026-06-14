@@ -1,0 +1,35 @@
+@use '../../styles/mixins' as *;
+
+.feedback-trigger {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  border: var(--border-thin) solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: var(--space-1) var(--space-3);
+  background: transparent;
+  white-space: nowrap;
+  transition: var(--transition-base);
+
+  @include focus-border;
+
+  &:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  &--footer {
+    flex-shrink: 0;
+  }
+
+  &--sidebar {
+    width: 100%;
+    margin-top: var(--space-6);
+    padding: var(--space-2) var(--space-3);
+    color: var(--color-accent);
+    border-color: var(--color-border-accent);
+    background: var(--color-bg-inset);
+  }
+}

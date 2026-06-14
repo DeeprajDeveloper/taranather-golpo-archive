@@ -1,0 +1,52 @@
+@use '../../styles/mixins' as *;
+
+.empty-state {
+  text-align: center;
+  padding: var(--space-20) var(--space-6);
+}
+
+.empty-state__ornament {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-accent);
+  opacity: 0.5;
+  margin-bottom: var(--space-6);
+}
+
+.empty-state__bengali {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-style: italic;
+  font-weight: var(--weight-light);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.empty-state__english,
+.empty-state__hint {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-ghost);
+  margin-bottom: var(--space-3);
+}
+
+.empty-state__reset {
+  margin-top: var(--space-6);
+  padding: var(--space-2) var(--space-4);
+  border: var(--border-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  transition: var(--transition-base);
+
+  @include focus-border;
+
+  &:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+}

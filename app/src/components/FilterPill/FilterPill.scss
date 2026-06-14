@@ -1,0 +1,30 @@
+@use '../../styles/mixins' as *;
+
+.filter-pill {
+  flex-shrink: 0;
+  height: 32px;
+  padding: 0 14px;
+  border-radius: var(--radius-pill);
+  border: var(--border-thin) solid var(--color-border);
+  background: var(--color-bg-surface);
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  transition: var(--transition-base);
+  white-space: nowrap;
+
+  @include focus-border;
+
+  &:hover {
+    border-color: var(--color-border-accent);
+    color: var(--color-text-primary);
+  }
+
+  &--active {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    background: var(--color-bg-elevated);
+  }
+}

@@ -1,0 +1,62 @@
+@use '../../styles/mixins' as *;
+
+.filter-group {
+  margin-bottom: var(--space-4);
+}
+
+.filter-group__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-text-ghost);
+  margin-bottom: var(--space-2);
+}
+
+.filter-strip {
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: var(--space-1);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &--vertical {
+    flex-direction: column;
+    overflow-x: visible;
+    align-items: stretch;
+    padding-bottom: 0;
+  }
+}
+
+.filter-select {
+  appearance: none;
+  width: 100%;
+  max-width: 320px;
+  height: 36px;
+  background: var(--color-bg-surface);
+  border: var(--border-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  padding: 0 var(--space-8) 0 var(--space-3);
+  cursor: pointer;
+  transition: var(--transition-base);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238A8070' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+
+  @include focus-border;
+
+  &:hover {
+    border-color: var(--color-border-accent);
+  }
+}

@@ -1,0 +1,54 @@
+@use '../../styles/mixins' as *;
+
+.back-to-top {
+  position: fixed;
+  right: var(--space-6);
+  bottom: calc(var(--footer-height) + var(--space-4));
+  z-index: 110;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: var(--border-thin) solid var(--color-border);
+  background: var(--color-bg-surface);
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition:
+    opacity var(--duration-normal) var(--ease-out),
+    transform var(--duration-normal) var(--ease-out),
+    visibility var(--duration-normal) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out);
+
+  @include focus-border;
+
+  &--visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+}
+
+@media (max-width: 600px) {
+  .back-to-top {
+    right: var(--space-4);
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top {
+    transition: none;
+  }
+}

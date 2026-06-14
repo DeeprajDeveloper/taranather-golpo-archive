@@ -1,0 +1,4484 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "updatedAt": "2026-06-14",
+    "description": "Master catalog of Taranath Tantrik stories for read-only web UI",
+    "footer": {
+      "links": [
+        {
+          "label": "Design system",
+          "url": "/design/index.html",
+          "icon": "design",
+          "external": true
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/DeeprajDeveloper/taranather-golpo-archive",
+          "icon": "github",
+          "external": true
+        }
+      ]
+    },
+    "stats": {
+      "totalStories": 132,
+      "original": 32,
+      "fanFiction": 100,
+      "withYouTube": 129,
+      "withoutYouTube": 3,
+      "authors": 24
+    },
+    "about": {
+      "eyebrow": "তারানাথের গল্প",
+      "title": "About this archive",
+      "intro": {
+        "paragraphs": [
+          "A fan-built index of Taranath Tantrik stories — original works from the Bandyopadhyay family and fan fiction from later writers and narrators. Browse, search, and filter the catalog, then jump straight to YouTube to listen.",
+          "This site is a read-only archive maintained by readers, not a publisher. It links out to publicly available audio and video rather than hosting story text."
+        ]
+      },
+      "character": {
+        "heading": "The character & original authors",
+        "paragraphs": [
+          "Taranath Tantrik is a fictional Bengali occult practitioner who recounts supernatural adventures from his past. The character was created by Bibhutibhushan Bandyopadhyay, best known for Pather Panchali, in stories he wrote before his death in 1950. His son, Taradas Bandyopadhyay, continued the lineage — gathering, expanding, and writing new Taranath episodes that became widely known through print and radio."
+        ]
+      },
+      "collection": {
+        "heading": "In the collection",
+        "statsLabels": {
+          "totalStories": "Stories catalogued",
+          "withYouTube": "With YouTube links",
+          "original": "Original lineage",
+          "fanFiction": "Fan fiction"
+        }
+      },
+      "sources": {
+        "heading": "Sources & further reading",
+        "items": [
+          {
+            "label": "English Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Taranath_Tantrik"
+          },
+          {
+            "label": "Bangla Wikipedia",
+            "url": "https://bn.wikipedia.org/wiki/%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%A5_%E0%A6%A4%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%95"
+          },
+          {
+            "label": "Mirchi Bangla Sunday Suspense",
+            "url": "https://www.youtube.com/@MirchiBangla"
+          },
+          {
+            "label": "Goppo Mir er Thek podcast",
+            "url": "https://www.youtube.com/@realmir"
+          },
+          {
+            "label": "YouTube playlist",
+            "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+          }
+        ]
+      }
+    }
+  },
+  "filters": {
+    "lineages": [
+      {
+        "value": "original",
+        "label": "original (Bandyopadhyay family)",
+        "title": "Original stories written by the Bandyopadhyay family"
+      },
+      {
+        "value": "fan_fiction",
+        "label": "Fan fiction (Golper Jonyo & others)",
+        "title": "Fan fiction written by Golper Jonyo & other authors"
+      }
+    ],
+    "storyTypes": [
+      {
+        "value": "audio_compilation",
+        "label": "Audio Compilation"
+      },
+      {
+        "value": "collection",
+        "label": "Collection"
+      },
+      {
+        "value": "fan_fiction",
+        "label": "Fan Fiction"
+      },
+      {
+        "value": "novel",
+        "label": "Novel"
+      },
+      {
+        "value": "short_story",
+        "label": "Short Story"
+      },
+      {
+        "value": "sub_narrative",
+        "label": "Sub Narrative"
+      }
+    ],
+    "series": [
+      {
+        "value": "Brahmokal Tantrik",
+        "label": "Brahmokal Tantrik"
+      },
+      {
+        "value": "Taranath Tantrik",
+        "label": "Taranath Tantrik"
+      }
+    ],
+    "authors": [
+      {
+        "value": "auth-anik-chakraborty",
+        "label": "Anik Chakraborty",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-arnab-das",
+        "label": "Arnab Das",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-bibhutibhushan",
+        "label": "Bibhutibhushan Bandyopadhyay",
+        "role": "original"
+      },
+      {
+        "value": "auth-debjani-chatterjee",
+        "label": "Debjani Chatterjee",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-dhumketu",
+        "label": "Dhumketu",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-golper-jonyo-team",
+        "label": "Golper Jonyo Team",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-hemlock",
+        "label": "Hemlock",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-indradip-das",
+        "label": "Indradip Das",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-kuhelika",
+        "label": "Kuhelika",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-motijhil",
+        "label": "Motijhil",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-moumita-dey",
+        "label": "Moumita Dey",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-piyasa",
+        "label": "Piyasa",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-raj-chakraborty",
+        "label": "Raj Chakraborty",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-sameer",
+        "label": "Sameer",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-sanchi",
+        "label": "Sanchi",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-satyajit-adhikary",
+        "label": "Satyajit Adhikary",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-shibangan",
+        "label": "Shibangan",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-shree",
+        "label": "Shree",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-sudeshna-ghosh",
+        "label": "Sudeshna Ghosh",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-sukanta-das",
+        "label": "Sukanta Das",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-susmita-goswami",
+        "label": "Susmita Goswami",
+        "role": "fan_fiction"
+      },
+      {
+        "value": "auth-taradas",
+        "label": "Taradas Bandyopadhyay",
+        "role": "original"
+      },
+      {
+        "value": "auth-tathagata",
+        "label": "Tathagata Bandyopadhyay",
+        "role": "original"
+      },
+      {
+        "value": "auth-trinankur",
+        "label": "Trinankur Bandyopadhyay",
+        "role": "original"
+      }
+    ]
+  },
+  "authors": [
+    {
+      "id": "auth-anik-chakraborty",
+      "name": "Anik Chakraborty",
+      "nameBn": "অনিক চক্রবর্তী",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-arnab-das",
+      "name": "Arnab Das",
+      "nameBn": "অর্ণব দাস",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-bibhutibhushan",
+      "name": "Bibhutibhushan Bandyopadhyay",
+      "nameBn": null,
+      "role": "original"
+    },
+    {
+      "id": "auth-debjani-chatterjee",
+      "name": "Debjani Chatterjee",
+      "nameBn": "দেবযানী চ্যাটার্জী",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-dhumketu",
+      "name": "Dhumketu",
+      "nameBn": "Dhumketu",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-golper-jonyo-team",
+      "name": "Golper Jonyo Team",
+      "nameBn": "Golper Jonyo Team",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-hemlock",
+      "name": "Hemlock",
+      "nameBn": "Hemlock",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-indradip-das",
+      "name": "Indradip Das",
+      "nameBn": "ইন্দ্রদীপ দাস",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-kuhelika",
+      "name": "Kuhelika",
+      "nameBn": "Kuhelika",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-motijhil",
+      "name": "Motijhil",
+      "nameBn": "Motijhil",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-moumita-dey",
+      "name": "Moumita Dey",
+      "nameBn": "মৌমিতা দে",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-piyasa",
+      "name": "Piyasa",
+      "nameBn": "পিয়াসা",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-raj-chakraborty",
+      "name": "Raj Chakraborty",
+      "nameBn": "রাজ চক্রবর্তী",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-sameer",
+      "name": "Sameer",
+      "nameBn": "Sameer",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-sanchi",
+      "name": "Sanchi",
+      "nameBn": "Sanchi",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-satyajit-adhikary",
+      "name": "Satyajit Adhikary",
+      "nameBn": "সত্যজিৎ অধিকারী",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-shibangan",
+      "name": "Shibangan",
+      "nameBn": "Shibangan",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-shree",
+      "name": "Shree",
+      "nameBn": "Shree",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-sudeshna-ghosh",
+      "name": "Sudeshna Ghosh",
+      "nameBn": "Sudeshna Ghosh",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-sukanta-das",
+      "name": "Sukanta Das",
+      "nameBn": "সুকান্ত দাস",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-susmita-goswami",
+      "name": "Susmita Goswami",
+      "nameBn": "সুস্মিতা গোস্বামী",
+      "role": "fan_fiction"
+    },
+    {
+      "id": "auth-taradas",
+      "name": "Taradas Bandyopadhyay",
+      "nameBn": null,
+      "role": "original"
+    },
+    {
+      "id": "auth-tathagata",
+      "name": "Tathagata Bandyopadhyay",
+      "nameBn": null,
+      "role": "original"
+    },
+    {
+      "id": "auth-trinankur",
+      "name": "Trinankur Bandyopadhyay",
+      "nameBn": null,
+      "role": "original"
+    }
+  ],
+  "stories": [
+    {
+      "id": "tt-001",
+      "slug": "tarnath-tantrik-er-golpo",
+      "title": {
+        "en": "Tarnath Tantrik-er Golpo",
+        "bn": "তারানাথ তান্ত্রিকের গল্প"
+      },
+      "authorId": "auth-bibhutibhushan",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=Ek-feRBQ3FE",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "yearApprox": 1940,
+      "notes": "Foundational frame story; Taranath recounts his occult past to two young friends in Kolkata."
+    },
+    {
+      "id": "tt-002",
+      "slug": "madhusundari-debir-abirbhab",
+      "title": {
+        "en": "Madhusundari Debi'r Abirbhab",
+        "bn": "মধুসুন্দরী দেবীর আবির্ভাব"
+      },
+      "authorId": "auth-bibhutibhushan",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=8dbsivzU7gk",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "yearApprox": 1940,
+      "notes": "Taranath's encounter with the supernatural enchantress Madhusundari Debi near the Barakar river."
+    },
+    {
+      "id": "tt-003",
+      "slug": "matu-pagli",
+      "title": {
+        "en": "Matu Pagli",
+        "bn": "মাতু পাগলী"
+      },
+      "authorId": "auth-bibhutibhushan",
+      "lineage": "original",
+      "storyType": "sub_narrative",
+      "series": "Taranath Tantrik",
+      "parentStoryId": "tt-001",
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=FKIUpZbBxkc",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original",
+        "sub-narrative"
+      ],
+      "notes": "Taranath's first guru, the mysterious Matu Pagli of Birbhum; also adapted by Taradas for radio."
+    },
+    {
+      "id": "tt-004",
+      "slug": "subala",
+      "title": {
+        "en": "Subala",
+        "bn": "সুবলা"
+      },
+      "authorId": "auth-bibhutibhushan",
+      "lineage": "original",
+      "storyType": "sub_narrative",
+      "series": "Taranath Tantrik",
+      "parentStoryId": "tt-001",
+      "media": [],
+      "tags": [
+        "taranath-tantrik",
+        "original",
+        "sub-narrative"
+      ],
+      "notes": "Original Subala episode from Bibhutibhushan's narrative. Taradas later wrote a separate Subala-related story (see Janmantar)."
+    },
+    {
+      "id": "tt-005",
+      "slug": "jawrashur-jwarasur",
+      "title": {
+        "en": "Jawrashur / Jwarasur",
+        "bn": "জ্বরাসুর"
+      },
+      "authorId": "auth-bibhutibhushan",
+      "lineage": "original",
+      "storyType": "sub_narrative",
+      "series": "Taranath Tantrik",
+      "parentStoryId": "tt-001",
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=oK6xCER-aWE",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original",
+        "sub-narrative"
+      ],
+      "notes": "Childhood fever demon episode; expanded in Taradas's 1985 collection."
+    },
+    {
+      "id": "tt-006",
+      "slug": "betal",
+      "title": {
+        "en": "Betal",
+        "bn": "বেতাল"
+      },
+      "authorId": "auth-bibhutibhushan",
+      "lineage": "original",
+      "storyType": "sub_narrative",
+      "series": "Taranath Tantrik",
+      "parentStoryId": "tt-001",
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=C3YpWl4vLoo",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original",
+        "sub-narrative"
+      ],
+      "notes": "Taranath assigned to save a girl from a Kapalik."
+    },
+    {
+      "id": "tt-007",
+      "slug": "kalbhairav-kaal-bhairav",
+      "title": {
+        "en": "Kalbhairav / Kaal Bhairav",
+        "bn": "কালভৈরব"
+      },
+      "authorId": "auth-bibhutibhushan",
+      "lineage": "original",
+      "storyType": "sub_narrative",
+      "series": "Taranath Tantrik",
+      "parentStoryId": "tt-001",
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=9MrvABI38BU",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original",
+        "sub-narrative"
+      ],
+      "notes": "Taranath earns Kalbhairav's attention but falters at a crucial moment."
+    },
+    {
+      "id": "tt-008",
+      "slug": "birjabala-birajbala",
+      "title": {
+        "en": "Birjabala / Birajbala",
+        "bn": "বিরজবালা"
+      },
+      "authorId": "auth-bibhutibhushan",
+      "lineage": "original",
+      "storyType": "sub_narrative",
+      "series": "Taranath Tantrik",
+      "parentStoryId": "tt-001",
+      "media": [],
+      "tags": [
+        "taranath-tantrik",
+        "original",
+        "sub-narrative"
+      ],
+      "notes": "Taranath senses a strange unseen presence after returning home."
+    },
+    {
+      "id": "tt-009",
+      "slug": "tarabhoirobi-tarabhairavi",
+      "title": {
+        "en": "Tarabhoirobi / Tarabhairavi",
+        "bn": "তারাভৈরবী"
+      },
+      "authorId": "auth-bibhutibhushan",
+      "lineage": "original",
+      "storyType": "sub_narrative",
+      "series": "Taranath Tantrik",
+      "parentStoryId": "tt-001",
+      "media": [],
+      "tags": [
+        "taranath-tantrik",
+        "original",
+        "sub-narrative"
+      ],
+      "notes": "Young Taranath falls for an enchantress, triggering eerie events."
+    },
+    {
+      "id": "tt-010",
+      "slug": "bathtob",
+      "title": {
+        "en": "Bathtob",
+        "bn": "বাথতব"
+      },
+      "authorId": "auth-bibhutibhushan",
+      "lineage": "original",
+      "storyType": "sub_narrative",
+      "series": "Taranath Tantrik",
+      "parentStoryId": "tt-001",
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=e1Sx2OeSw94",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original",
+        "sub-narrative"
+      ],
+      "notes": "Taranath visits a rich man's home and senses a presence requiring exorcism; expanded by Taradas (Bishu Thakur episode)."
+    },
+    {
+      "id": "tt-011",
+      "slug": "mukh",
+      "title": {
+        "en": "Mukh",
+        "bn": "মুখ"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=UMiKPN-QHRA",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "sourceWork": "Taranath Tantrik (1985)",
+      "notes": "A face appears on the bathroom floor at Ramdulal's house."
+    },
+    {
+      "id": "tt-012",
+      "slug": "ranga-kakima",
+      "title": {
+        "en": "Ranga Kakima",
+        "bn": "রাঙা কাকিমা"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=hg9VsL66RpQ",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "sourceWork": "Taranath Tantrik (1985)",
+      "notes": "The story of Ranga Kakima and Birajbala from Taranath's family."
+    },
+    {
+      "id": "tt-013",
+      "slug": "brojobhushan-er-biswasprapti",
+      "title": {
+        "en": "Brojobhushan-er Biswasprapti",
+        "bn": "ব্রজভূষণের বিশ্বাসপ্রাপ্তি"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=_cqV2e-F7h8",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "sourceWork": "Taranath Tantrik (1985) / standalone publication",
+      "notes": "Story of faith and the supernatural; broadcast in two parts on Sunday Suspense."
+    },
+    {
+      "id": "tt-014",
+      "slug": "janmantar",
+      "title": {
+        "en": "Janmantar",
+        "bn": "জন্মান্তর"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=-jIdJkjN-Jk",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "notes": "Reincarnation-themed Taranath story featuring Subala."
+    },
+    {
+      "id": "tt-015",
+      "slug": "agun",
+      "title": {
+        "en": "Agun",
+        "bn": "আগুন"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=Mw4EpxQfbO8",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ]
+    },
+    {
+      "id": "tt-016",
+      "slug": "jolpishach",
+      "title": {
+        "en": "Jolpishach",
+        "bn": "জলপিশাচ"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=1qjJf_F9B9k",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "notes": "Water-demon themed story."
+    },
+    {
+      "id": "tt-017",
+      "slug": "pasang-mara",
+      "title": {
+        "en": "Pasang Mara",
+        "bn": "পাশাং মারা"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=DtUMLu9_gaQ",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ]
+    },
+    {
+      "id": "tt-018",
+      "slug": "debdarshan",
+      "title": {
+        "en": "Debdarshan",
+        "bn": "দেবদর্শন"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=SChKbBtgC2o",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "notes": "Often broadcast alongside Kaal Bhairav and Birjabhusan in classics."
+    },
+    {
+      "id": "tt-019",
+      "slug": "okhane-amangal",
+      "title": {
+        "en": "Okhane Amangal",
+        "bn": "ওখানে অমঙ্গল"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=xYPJtoJVeEk",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ]
+    },
+    {
+      "id": "tt-020",
+      "slug": "bibhash-daakchhe",
+      "title": {
+        "en": "Bibhash Daakchhe",
+        "bn": "বিভাষ ডাকছে"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=tAbeVNtIU-0",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ]
+    },
+    {
+      "id": "tt-021",
+      "slug": "amar-jiban",
+      "title": {
+        "en": "Amar Jiban",
+        "bn": "আমার জীবন"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=tg8YJ73Tz9k",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ]
+    },
+    {
+      "id": "tt-022",
+      "slug": "panchamundir-asan",
+      "title": {
+        "en": "Panchamundi'r Asan",
+        "bn": "পঞ্চমুণ্ডীর আসন"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=cMy63zEbB_s",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "sourceWork": "Standalone publication"
+    },
+    {
+      "id": "tt-023",
+      "slug": "tinti-kaak-er-golpo",
+      "title": {
+        "en": "Tinti Kaak-er Golpo",
+        "bn": "তিনটি কাকের গল্প"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=vLdK9tRP2UY",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "sourceWork": "Standalone publication"
+    },
+    {
+      "id": "tt-024",
+      "slug": "taranath-tantrik-o-brahmapishach",
+      "title": {
+        "en": "Taranath Tantrik O Brahmapishach",
+        "bn": "তারানাথ তান্ত্রিক ও ব্রহ্মপিশাচ"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=zBP7RdcSpu0",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "sourceWork": "Standalone publication"
+    },
+    {
+      "id": "tt-025",
+      "slug": "taranath-tantrik-er-aschorjyo-duniya",
+      "title": {
+        "en": "Taranath Tantrik-er Aschorjyo Duniya",
+        "bn": "তারানাথ তান্ত্রিকের আশ্চর্য দুনিয়া"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=A5YgdQUtBoE",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "sourceWork": "Standalone publication"
+    },
+    {
+      "id": "tt-026",
+      "slug": "alatchakra",
+      "title": {
+        "en": "Alatchakra",
+        "bn": "অলাতচক্র"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "novel",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=9prOc3dwIic",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original",
+        "novel"
+      ],
+      "yearApprox": 2003,
+      "notes": "Novel centered on Taranath; widely regarded as one of the finest works in the series."
+    },
+    {
+      "id": "tt-027",
+      "slug": "abar-taranath",
+      "title": {
+        "en": "Abar Taranath",
+        "bn": "আবার তারানাথ"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "collection",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=GKMRxRvNwzk",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "notes": "Later collection continuing the Taranath series."
+    },
+    {
+      "id": "tt-028",
+      "slug": "taranather-protabartan-bhondo-taranath",
+      "title": {
+        "en": "Taranather Protabartan (Bhondo Taranath)",
+        "bn": "তারানাথের প্রত্যাবর্তন"
+      },
+      "authorId": "auth-tathagata",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=0N-mNYwlus8",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "notes": "Grandson of Bibhutibhushan; also published as Bhondo Taranath."
+    },
+    {
+      "id": "tt-029",
+      "slug": "taranather-bramhastra",
+      "title": {
+        "en": "Taranather Bramhastra",
+        "bn": "তারানাথের ব্রহ্মাস্ত্র"
+      },
+      "authorId": "auth-tathagata",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=mad5Uf4dels",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ]
+    },
+    {
+      "id": "tt-030",
+      "slug": "rudradeb-taranath",
+      "title": {
+        "en": "Rudradeb Taranath",
+        "bn": "রুদ্রদেব তারানাথ"
+      },
+      "authorId": "auth-tathagata",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=F5hJpi3jO_Y",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "yearApprox": 2026
+    },
+    {
+      "id": "tt-031",
+      "slug": "kolkataye-taranath",
+      "title": {
+        "en": "Kolkataye Taranath",
+        "bn": "কলকাতায় তারানাথ"
+      },
+      "authorId": "auth-trinankur",
+      "lineage": "original",
+      "storyType": "short_story",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=Bzvym38M66Q",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "yearApprox": 2025,
+      "notes": "Younger son of Taradas; audio story broadcast on Sunday Suspense."
+    },
+    {
+      "id": "tt-032",
+      "slug": "taranath-tantrik-er-golpo-classics-compilation",
+      "title": {
+        "en": "Taranath Tantrik-er Golpo (Classics compilation)",
+        "bn": "তারানাথ তান্ত্রিকের গল্প (ক্লাসিক্স)"
+      },
+      "authorId": "auth-taradas",
+      "lineage": "original",
+      "storyType": "audio_compilation",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Mirchi Bangla",
+          "url": "https://www.youtube.com/watch?v=kC_Ozq58q3w",
+          "format": "audio_drama"
+        }
+      ],
+      "tags": [
+        "taranath-tantrik",
+        "original"
+      ],
+      "notes": "Sunday Suspense classics episode combining Debdarshan, Kaal Bhairav and related narratives."
+    },
+    {
+      "id": "gj-001",
+      "slug": "story-70502-gj001",
+      "title": {
+        "en": null,
+        "bn": "পাতাল ভৈরব"
+      },
+      "authorId": "auth-debjani-chatterjee",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=_rXb4XAasEE",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 1,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-002",
+      "slug": "story-47430-gj002",
+      "title": {
+        "en": null,
+        "bn": "কঙ্কাল কোটরীর ক্ষুধা"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=wGzq54rT95M",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 2,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-003",
+      "slug": "story-6611-gj003",
+      "title": {
+        "en": null,
+        "bn": "ভষ্মভৈরবী তন্ত্র ও তারানাথ তান্ত্রিক"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=9z7Pu4dEdWs",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 3,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-004",
+      "slug": "story-36860-gj004",
+      "title": {
+        "en": null,
+        "bn": "চন্ডীপূরের রুধির খর্পর"
+      },
+      "authorId": "auth-susmita-goswami",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=gD3TsKprsgc",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 4,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-005",
+      "slug": "story-81347-gj005",
+      "title": {
+        "en": null,
+        "bn": "তারানাথ তান্ত্রিক ও অঘোরি ডাইনির ছায়া"
+      },
+      "authorId": "auth-anik-chakraborty",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=qq9XOtKiBG8",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 5,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-006",
+      "slug": "story-48712-gj006",
+      "title": {
+        "en": null,
+        "bn": "মানোরী জাগ্রত"
+      },
+      "authorId": "auth-sukanta-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=phFvm3nE1xY",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 6,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-007",
+      "slug": "story-31750-gj007",
+      "title": {
+        "en": null,
+        "bn": "মেলোডি অফ দ্য ডেড অফ নাইট"
+      },
+      "authorId": "auth-satyajit-adhikary",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=5eaGbWWIrHQ",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 7,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-008",
+      "slug": "nishinamchar-khide-taranath-tantrik-er-golpo-gj008",
+      "title": {
+        "en": "Nishinamchar Khide - taranath tantrik er golpo",
+        "bn": "নিশিনামচার খিদে"
+      },
+      "authorId": "auth-susmita-goswami",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=cH5oUhqDywo",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 8,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-009",
+      "slug": "raktorankinir-ovishap-taranath-tantrik-er-golpo-gj009",
+      "title": {
+        "en": "Raktorankinir Ovishap - taranath tantrik er golpo",
+        "bn": "রক্ত রঙ্কিণীর অভিশাপ"
+      },
+      "authorId": "auth-piyasa",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=wETpkmSyc38",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 9,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-010",
+      "slug": "kalidaher-pret-taranath-tantrik-er-golpo-gj010",
+      "title": {
+        "en": "Kalidaher Pret - taranath tantrik er golpo",
+        "bn": "কালিদহের প্রেত"
+      },
+      "authorId": "auth-arnab-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=3XAIm1YPFjY",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 10,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-011",
+      "slug": "kalbhairab-chakra-tantra-taranath-tantrik-er-golpo-gj011",
+      "title": {
+        "en": "Kalbhairab Chakra Tantra - taranath tantrik er golpo",
+        "bn": "কালভৈরব চক্র তন্ত্র - তারানাথ তান্ত্রিকের গল্প। TARANATH TANTRIK"
+      },
+      "authorId": "auth-piyasa",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=LA7AOql8Yps",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 11,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-012",
+      "slug": "roktopolasher-ovishap-taranath-tantrik-er-golpo-gj012",
+      "title": {
+        "en": "Roktopolasher Ovishap - taranath tantrik er golpo",
+        "bn": "রক্তপলাশের অভিশাপ"
+      },
+      "authorId": "auth-susmita-goswami",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=C32A9x8aqiw",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 12,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-013",
+      "slug": "brohmmopishacher-rosh-taranath-tantrik-er-golpo-gj013",
+      "title": {
+        "en": "Brohmmopishacher Rosh - taranath tantrik er golpo",
+        "bn": "ব্রহ্মপিশাচের রোষ"
+      },
+      "authorId": "auth-piyasa",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=nDosXrC7N84",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 13,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-014",
+      "slug": "nadir-opar-hote-taranath-tantrik-er-golpo-gj014",
+      "title": {
+        "en": "Nadir Opar Hote - taranath tantrik er golpo",
+        "bn": "নদীর ওপার হতে"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=MK04ZPu5VDU",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 14,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-015",
+      "slug": "jomidar-barir-ovishap-taranath-tantrik-er-golpo-gj015",
+      "title": {
+        "en": "Jomidar Barir Ovishap - taranath tantrik er golpo",
+        "bn": "জমিদার বাড়ির অভিশাপ"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=RkdEfnn8K1Q",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 15,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-016",
+      "slug": "kobondho-rakkhosher-ovishap-taranath-tantrik-er-golpo-gj016",
+      "title": {
+        "en": "Kobondho Rakkhosher Ovishap - taranath tantrik er golpo",
+        "bn": "কবন্ধ রাক্ষসের অভিশাপ"
+      },
+      "authorId": "auth-sanchi",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=WIwWIuxW6us",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 16,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-017",
+      "slug": "smasaner-shoytan-uchaton-taranath-tantrik-er-golpo-gj017",
+      "title": {
+        "en": "Smasaner Shoytan Uchaton - taranath tantrik er golpo",
+        "bn": "শ্মশানের শয়তান উচাটন"
+      },
+      "authorId": "auth-anik-chakraborty",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=5xGNludTlY4",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 17,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-018",
+      "slug": "manushkheko-bari-taranath-tantrik-er-golpo-gj018",
+      "title": {
+        "en": "Manushkheko Bari - taranath tantrik er golpo",
+        "bn": "মানুষখেকো বাড়ি"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=EJTEeU6xlBo",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 18,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-019",
+      "slug": "bonchondir-obhishap-taranath-tantrik-er-golpo-gj019",
+      "title": {
+        "en": "Bonchondir Obhishap - taranath tantrik er golpo",
+        "bn": "মহাশূন্যের প্রদীপ"
+      },
+      "authorId": "auth-satyajit-adhikary",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=gzzK48N_9lw",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 19,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-020",
+      "slug": "bonchondir-obhishap-taranath-tantrik-er-golpo-gj020",
+      "title": {
+        "en": "Bonchondir Obhishap - taranath tantrik er golpo",
+        "bn": "বনচন্ডীর অভিশাপ"
+      },
+      "authorId": "auth-piyasa",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=DfWUWrqYa4k",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 20,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-021",
+      "slug": "ghorghontiputer-pishachini-taranath-tantrik-er-golpo-gj021",
+      "title": {
+        "en": "Ghorghontiputer PIshachini - taranath tantrik er golpo",
+        "bn": "ঘরঘন্টিপুরের পিশাচিনী"
+      },
+      "authorId": "auth-sukanta-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=6YtMoqqhOD8",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 21,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-022",
+      "slug": "rantapurer-bipad-taranath-tantrik-er-golpo-gj022",
+      "title": {
+        "en": "Rantapurer Bipad - taranath tantrik er golpo",
+        "bn": "রত্নপুরের বিপদ"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=BbyQguC1Mvs",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 22,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-023",
+      "slug": "kaloranir-saptam-mukh-taranath-tantrik-er-golpo-gj023",
+      "title": {
+        "en": "Kaloranir Saptam Mukh - taranath tantrik er golpo",
+        "bn": "কালোরাণীর সপ্তম মুখ"
+      },
+      "authorId": "auth-satyajit-adhikary",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=0qQRZMahdEE",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 23,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-024",
+      "slug": "kalobidyar-prabhab-taranath-tantrik-er-golpo-gj024",
+      "title": {
+        "en": "Kalobidyar Prabhab - taranath tantrik er golpo",
+        "bn": "কালোবিদ্যার প্রভাব"
+      },
+      "authorId": "auth-piyasa",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=aTe94POrJAk",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 24,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-025",
+      "slug": "mahabetali-kriya-taranath-tantrik-er-golpo-gj025",
+      "title": {
+        "en": "Mahabetali Kriya - taranath tantrik er golpo",
+        "bn": "মহাবেতালি ক্রিয়া"
+      },
+      "authorId": "auth-piyasa",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=In80VkLEqaM",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 25,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-026",
+      "slug": "shoitaner-hritpindo-taranath-tantrik-er-golpo-gj026",
+      "title": {
+        "en": "Shoitaner Hritpindo - taranath tantrik er golpo",
+        "bn": "শয়তানের হৃৎপিণ্ড"
+      },
+      "authorId": "auth-hemlock",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=YSxrEcyYwg4",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 26,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-027",
+      "slug": "smasan-choya-taranath-tantrik-er-golpo-gj027",
+      "title": {
+        "en": "Smasan Choya - taranath tantrik er golpo",
+        "bn": "শ্মশানছোঁয়া"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=yhkCKry_SNQ",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 27,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-028",
+      "slug": "duttapukurer-mayapisachini-taranath-tantrik-er-golpo-gj028",
+      "title": {
+        "en": "Duttapukurer Mayapisachini - taranath tantrik er golpo",
+        "bn": "দত্তপুকুরের মায়াপিশাচিনী"
+      },
+      "authorId": "auth-indradip-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=d_J8_8Exubs",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 28,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-029",
+      "slug": "jokkhipurer-roktopisach-taranath-tantrik-er-golpo-gj029",
+      "title": {
+        "en": "Jokkhipurer Roktopisach - taranath tantrik er golpo",
+        "bn": "যক্ষীপুরের রক্তপিশাচ"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=XEgljlaDN7g",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 29,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-030",
+      "slug": "jothorer-ovishap-taranath-tantrik-er-golpo-gj030",
+      "title": {
+        "en": "Jothorer Ovishap - taranath tantrik er golpo",
+        "bn": "জঠরের অভিশাপ"
+      },
+      "authorId": "auth-arnab-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=AYMcMX8-bZs",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 30,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-031",
+      "slug": "story-78188-gj031",
+      "title": {
+        "en": null,
+        "bn": "মানুষের চামড়ায় তৈরি অভিশপ্ত পুথি! 💀 তারানাথ তান্ত্রিকের গল্প"
+      },
+      "authorId": "auth-hemlock",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=1vTJ_h5AEro",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 31,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-032",
+      "slug": "brindabanir-raktosanghat-taranath-tantrik-er-golpo-gj032",
+      "title": {
+        "en": "Brindabanir Raktosanghat - taranath tantrik er golpo",
+        "bn": "বৃন্দাবনীর রক্তসংঘাত"
+      },
+      "authorId": "auth-hemlock",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=gm3MkoGNWz0",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 32,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-033",
+      "slug": "swarnobrishchika-taranath-tantrik-er-golpo-gj033",
+      "title": {
+        "en": "Swarnobrishchika - taranath tantrik er golpo",
+        "bn": "স্বর্ণবৃশ্চিকা"
+      },
+      "authorId": "auth-hemlock",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=ReGIX2sOu8g",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 33,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-034",
+      "slug": "kalshrot-taranath-tantrik-er-golpo-gj034",
+      "title": {
+        "en": "Kalshrot - taranath tantrik er golpo",
+        "bn": "কালস্রোত তন্ত্র"
+      },
+      "authorId": "auth-raj-chakraborty",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=3_jI9n1myco",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 34,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-035",
+      "slug": "roktokheko-pishachini-taranath-tantrik-er-golpo-gj035",
+      "title": {
+        "en": "Roktokheko Pishachini - taranath tantrik er golpo",
+        "bn": "রক্তখেকো পিশাচিনী"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=sUe7qdPPygs",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 35,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-036",
+      "slug": "raktanishir-fand-taranath-tantrik-er-golpo-gj036",
+      "title": {
+        "en": "Raktanishir Fand - taranath tantrik er golpo",
+        "bn": "রক্তনিশির ফাঁদ"
+      },
+      "authorId": "auth-piyasa",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=Bjd8DaNjvkU",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 36,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-037",
+      "slug": "pitambarer-protisodh-taranath-tantrik-er-golpo-gj037",
+      "title": {
+        "en": "Pitambarer Protisodh - taranath tantrik er golpo",
+        "bn": "পীতাম্বরের প্রতিশোধ"
+      },
+      "authorId": "auth-indradip-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=-uAA90oRZQk",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 37,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-038",
+      "slug": "mrityufande-taranath-taranath-tantrik-er-golpo-gj038",
+      "title": {
+        "en": "Mrityufande Taranath - taranath tantrik er golpo",
+        "bn": "মৃত্যুফাঁদে তারানাথ"
+      },
+      "authorId": "auth-indradip-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=Gk_OdDdpX8k",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 38,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-039",
+      "slug": "nandipurer-harikath-taranath-tantrik-er-golpo-gj039",
+      "title": {
+        "en": "Nandipurer Harikath - taranath tantrik er golpo",
+        "bn": "নন্দিপুরের হাড়িকাঠ"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=X-dIG2E0Gns",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 39,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-040",
+      "slug": "debi-kamala-dashmahavidya-taranath-tantrik-er-golpo-gj040",
+      "title": {
+        "en": "Debi Kamala - Dashmahavidya - taranath tantrik er golpo",
+        "bn": "রক্তাক্ত রক্তবাণ - তারানাথ তান্ত্রিকের গল্প"
+      },
+      "authorId": "auth-piyasa",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=hWxyb8Kb3W4",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 40,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-041",
+      "slug": "shreechakra-rohosyo-taranath-tantrik-er-golpo-gj041",
+      "title": {
+        "en": "Shreechakra Rohosyo - taranath tantrik er golpo",
+        "bn": "শ্রীচক্র রহস্য"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=Qa_PNPV1K3E",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 41,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-042",
+      "slug": "mukundapurer-chaya-dakini-taranath-tantrik-er-golpo-gj042",
+      "title": {
+        "en": "Mukundapurer Chaya Dakini - taranath tantrik er golpo",
+        "bn": "মুকুন্দপুরের ছায়া ডাকিনী"
+      },
+      "authorId": "auth-arnab-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=koQTAvhGh5g",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 42,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-043",
+      "slug": "pishachinir-achor-taranath-tantrik-er-golpo-gj043",
+      "title": {
+        "en": "Pishachinir Achor - taranath tantrik er golpo",
+        "bn": "কস্তূরী বিসর্জন"
+      },
+      "authorId": "auth-satyajit-adhikary",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=AIBjpXL_h9M",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 43,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-044",
+      "slug": "pishachinir-achor-taranath-tantrik-er-golpo-gj044",
+      "title": {
+        "en": "Pishachinir Achor - taranath tantrik er golpo",
+        "bn": "পিশাচিনীর আঁচড়"
+      },
+      "authorId": "auth-piyasa",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=naF-Gz3qDZw",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 44,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-045",
+      "slug": "debi-kamala-dashmahavidya-taranath-tantrik-er-golpo-gj045",
+      "title": {
+        "en": "Debi Kamala - Dashmahavidya - taranath tantrik er golpo",
+        "bn": "দেবী কমলা"
+      },
+      "authorId": "auth-shibangan",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=f3vUz1brTTs",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 45,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-046",
+      "slug": "roktakto-tila-taranath-tantrik-er-golpo-gj046",
+      "title": {
+        "en": "Roktakto Tila - taranath tantrik er golpo",
+        "bn": "রক্তাক্ত টিলা"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=cRg6wdCwIlo",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 46,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-047",
+      "slug": "smasanchakra-abahan-taranath-tantrik-er-golpo-gj047",
+      "title": {
+        "en": "SmasanChakra Abahan - taranath tantrik er golpo",
+        "bn": "শ্মশানচক্র - আবাহন"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=Gqur3jYZBKI",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 47,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-048",
+      "slug": "smasanchakra-jagoron-taranath-tantrik-er-golpo-gj048",
+      "title": {
+        "en": "SmasanChakra Jagoron - taranath tantrik er golpo",
+        "bn": "শ্মশানচক্র - জাগরণ"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=c1zpHBSN0Js",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 48,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-049",
+      "slug": "nag-mohini-taranath-tantrik-er-golpo-gj049",
+      "title": {
+        "en": "Nag Mohini - taranath tantrik er golpo",
+        "bn": "নাগমোহিনী"
+      },
+      "authorId": "auth-hemlock",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=iAZfng_vqRg",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 49,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-050",
+      "slug": "bishoharir-jogonidra-taranath-tantrik-er-golpo-gj050",
+      "title": {
+        "en": "Bishoharir Jogonidra - taranath tantrik er golpo",
+        "bn": "বিষহরীর যোগনিদ্রা"
+      },
+      "authorId": "auth-indradip-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=dpO51fp0a-M",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 50,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-051",
+      "slug": "story-15975-gj051",
+      "title": {
+        "en": null,
+        "bn": "মটলেনের অশরীরী"
+      },
+      "authorId": "auth-golper-jonyo-team",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=paQi9dhFW-M",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 51,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-052",
+      "slug": "debi-baidyarupar-tantrarosh-taranath-tantrik-er-golpo-gj052",
+      "title": {
+        "en": "Debi Baidyarupar Tantrarosh - taranath tantrik er golpo",
+        "bn": "দেবী বৈদ্যরূপার রোষ"
+      },
+      "authorId": "auth-piyasa",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=OKABYHCUfPc",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 52,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-053",
+      "slug": "madhaber-sei-murti-taranath-tantrik-er-golpo-gj053",
+      "title": {
+        "en": "Madhaber Sei Murti - taranath tantrik er golpo",
+        "bn": "মাধবের সেই মূর্তি"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=5n08mLHOm9Q",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 53,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-054",
+      "slug": "nishiddho-jongoler-gombuj-taranath-tantrik-er-golpo-gj054",
+      "title": {
+        "en": "Nishiddho Jongoler Gombuj - taranath tantrik er golpo",
+        "bn": "নিষিদ্ধ জঙ্গলের গম্বুজ"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=F9ntMYV9enU",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 54,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-055",
+      "slug": "hat-kata-bouer-gram-taranath-tantrik-er-golpo-gj055",
+      "title": {
+        "en": "Hat Kata Bouer Gram - taranath tantrik er golpo",
+        "bn": "অভিশপ্ত কালি মূর্তি"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=Iif_La7WvtQ",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 55,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-056",
+      "slug": "hat-kata-bouer-gram-taranath-tantrik-er-golpo-gj056",
+      "title": {
+        "en": "Hat Kata Bouer Gram - taranath tantrik er golpo",
+        "bn": "হাতকাটা বউ এর গ্রাম"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=TDpHug8l_4o",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 56,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-057",
+      "slug": "dersho-bochorer-ovishap-taranath-tantrik-er-golpo-gj057",
+      "title": {
+        "en": "Dersho Bochorer Ovishap - taranath tantrik er golpo",
+        "bn": "দেড়শো বছরের অভিশাপ"
+      },
+      "authorId": "auth-indradip-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=Odd3aBtsy6M",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 57,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-058",
+      "slug": "ucchishto-chandalini-taranath-tantrik-er-golpo-gj058",
+      "title": {
+        "en": "Ucchishto Chandalini - taranath tantrik er golpo",
+        "bn": "উচ্ছিষ্ট চণ্ডালিনী"
+      },
+      "authorId": "auth-sudeshna-ghosh",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=4_G9C-MLR2I",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 58,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-059",
+      "slug": "naramundodharini-taranath-tantrik-er-golpo-gj059",
+      "title": {
+        "en": "Naramundodharini - taranath tantrik er golpo",
+        "bn": "দেবী মাতঙ্গীর কোপ"
+      },
+      "authorId": "auth-shibangan",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=NUZz4pYHBw8",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 59,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-060",
+      "slug": "naramundodharini-taranath-tantrik-er-golpo-gj060",
+      "title": {
+        "en": "Naramundodharini - taranath tantrik er golpo",
+        "bn": "নরমুন্ডধারিণী"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=zcU5wqj7zQw",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 60,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-061",
+      "slug": "jokkhopurir-guptomurti-taranath-tantrik-er-golpo-gj061",
+      "title": {
+        "en": "Jokkhopurir Guptomurti - taranath tantrik er golpo",
+        "bn": "যক্ষপুরীর গুপ্তমূর্তি"
+      },
+      "authorId": "auth-shree",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=w6dQIBbLWK0",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 61,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-062",
+      "slug": "bonyarate-nayanpur-taranath-tantrik-er-golpo-gj062",
+      "title": {
+        "en": "Bonyarate Nayanpur - taranath tantrik er golpo",
+        "bn": "বন্যা রাতে নয়নপুর"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=O32Sw3jnAsM",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 62,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-063",
+      "slug": "dainir-bari-taranath-tantrik-er-golpo-gj063",
+      "title": {
+        "en": "Dainir Bari - taranath tantrik er golpo",
+        "bn": "ডাইনীর বড়ি"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Brahmokal Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=5otq7Yr-eww",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 63,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo",
+        "brahmokal-tantrik"
+      ]
+    },
+    {
+      "id": "gj-064",
+      "slug": "satghorar-bipad-taranath-tantrik-er-golpo-gj064",
+      "title": {
+        "en": "Satghorar Bipad - taranath tantrik er golpo",
+        "bn": "সাতঘড়ার বিপদ"
+      },
+      "authorId": "auth-dhumketu",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=krWppKcs81Y",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 64,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-065",
+      "slug": "roktochokh-kanchankanya-taranath-tantrik-er-golpo-gj065",
+      "title": {
+        "en": "Roktochokh Kanchankanya - taranath tantrik er golpo",
+        "bn": "রক্তচোখ কাঞ্চনকন্যা"
+      },
+      "authorId": "auth-satyajit-adhikary",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=8ew4-Mq90ZM",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 65,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-066",
+      "slug": "sheorakalir-ekannobhog-taranath-tantrik-er-golpo-gj066",
+      "title": {
+        "en": "Sheorakalir Ekannobhog - taranath tantrik er golpo",
+        "bn": "শেওড়াকালির একান্ন ভোগ"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=jXEAHa3tbnc",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 66,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-067",
+      "slug": "shobsohagi-tara-taranath-tantrik-er-golpo-gj067",
+      "title": {
+        "en": "Shobsohagi Tara - taranath tantrik er golpo",
+        "bn": "শবসোহাগী তারা"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Brahmokal Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=zNssMVfwxT4",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 67,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo",
+        "brahmokal-tantrik"
+      ]
+    },
+    {
+      "id": "gj-068",
+      "slug": "norobolir-atonko-taranath-tantrik-er-golpo-gj068",
+      "title": {
+        "en": "Norobolir Atonko - taranath tantrik er golpo",
+        "bn": "নরবলির আতঙ্ক"
+      },
+      "authorId": "auth-piyasa",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=k3qJtPFO7Qs",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 68,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-069",
+      "slug": "debi-bogolamukhir-kripa-taranath-tantrik-er-golpo-gj069",
+      "title": {
+        "en": "Debi Bogolamukhir Kripa - taranath tantrik er golpo",
+        "bn": "দেবী বগলামুখির কৃপা"
+      },
+      "authorId": "auth-shibangan",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=GO9aW4wBLHE",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 69,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-070",
+      "slug": "abar-bankurar-jongole-taranath-tantrik-er-golpo-gj070",
+      "title": {
+        "en": "Abar Bankurar Jongole - taranath tantrik er golpo",
+        "bn": "আবার বাঁকুড়ার জঙ্গলে"
+      },
+      "authorId": "auth-indradip-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=GxQbXkk88fE",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 70,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-071",
+      "slug": "nimtala-smasaner-chhaya-taranath-tantrik-er-golpo-gj071",
+      "title": {
+        "en": "Nimtala Smasaner Chhaya- taranath tantrik er golpo",
+        "bn": "নিমতলা শ্মশানের ছায়া"
+      },
+      "authorId": "auth-raj-chakraborty",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=CFuCSSbZq1E",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 71,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-072",
+      "slug": "kakkaikodiyal-debi-taranath-tantrik-er-golpo-gj072",
+      "title": {
+        "en": "Kakkaikodiyal Debi- taranath tantrik er golpo",
+        "bn": "কাক্কাইকোডিয়াল দেবী"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=k7soolxzSjk",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 72,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-073",
+      "slug": "shantipurer-buro-dakini-taranath-tantrik-er-golpo-gj073",
+      "title": {
+        "en": "Shantipurer Buro Dakini- taranath tantrik er golpo",
+        "bn": "শান্তিপুরের বুড়ো ডাকিনী"
+      },
+      "authorId": "auth-arnab-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=aEWzgit-X7o",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 73,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-074",
+      "slug": "soukumarjer-hatchhani-taranath-tantrik-er-golpo-gj074",
+      "title": {
+        "en": "Soukumarjer Hatchhani- taranath tantrik er golpo",
+        "bn": "অভিশপ্ত রক্তপিপাসা"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Brahmokal Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=V8B1a6ii4Ww",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 74,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo",
+        "brahmokal-tantrik"
+      ]
+    },
+    {
+      "id": "gj-075",
+      "slug": "okalmrityur-okalbodhon-taranath-tantrik-er-golpo-gj075",
+      "title": {
+        "en": "Okalmrityur Okalbodhon- taranath tantrik er golpo",
+        "bn": "অকালমৃত্যুর অকালবোধন"
+      },
+      "authorId": "auth-piyasa",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=ZZf1ef9_KZI",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 75,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-076",
+      "slug": "shital-pindi-taranath-tantrik-er-golpo-gj076",
+      "title": {
+        "en": "Shital Pindi- taranath tantrik er golpo",
+        "bn": "শীতল পিন্ডি"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=mY6BOj02OV8",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 76,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-077",
+      "slug": "bhabani-dakat-taranath-tantrik-er-golpo-gj077",
+      "title": {
+        "en": "Bhabani Dakat- taranath tantrik er golpo",
+        "bn": "ভবানী ডাকাত"
+      },
+      "authorId": "auth-satyajit-adhikary",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=eLWW_oU4SsY",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 77,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-078",
+      "slug": "jivkata-bakultola-taranath-tantrik-er-golpo-gj078",
+      "title": {
+        "en": "Jivkata Bakultola- taranath tantrik er golpo",
+        "bn": "পিশাচিনী কন্যে"
+      },
+      "authorId": "auth-shree",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=wffXt1keZeI",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 78,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-079",
+      "slug": "chaitaparer-chita-taranath-tantrik-er-golpo-gj079",
+      "title": {
+        "en": "Chaitaparer Chita- taranath tantrik er golpo",
+        "bn": "চৈতাপারের চিতা"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Brahmokal Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=9f2Vub5t7Ac",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 79,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo",
+        "brahmokal-tantrik"
+      ]
+    },
+    {
+      "id": "gj-080",
+      "slug": "jivkata-bakultola-taranath-tantrik-er-golpo-gj080",
+      "title": {
+        "en": "Jivkata Bakultola- taranath tantrik er golpo",
+        "bn": "জিভকাটা বকুলতলার পিশাচ"
+      },
+      "authorId": "auth-shree",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=LM9CJ7D38PA",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 80,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-081",
+      "slug": "saptam-mahavidya-dhumabotir-ayna-taranath-tantrik-er-golpo-gj081",
+      "title": {
+        "en": "Saptam Mahavidya Dhumabotir Ayna- taranath tantrik er golpo",
+        "bn": "মকরের আবির্ভাব"
+      },
+      "authorId": "auth-motijhil",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=seQIAWoc0WA",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 81,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-082",
+      "slug": "khatochunnir-roktokanna-taranath-tantrik-er-golpo-gj082",
+      "title": {
+        "en": "Khatochunnir Roktokanna - taranath tantrik er golpo",
+        "bn": "খাটোচুন্নির রক্তকান্না"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Brahmokal Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=xfjx0SS3ReE",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 82,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo",
+        "brahmokal-tantrik"
+      ]
+    },
+    {
+      "id": "gj-083",
+      "slug": "saptam-mahavidya-dhumabotir-ayna-taranath-tantrik-er-golpo-gj083",
+      "title": {
+        "en": "Saptam Mahavidya Dhumabotir Ayna- taranath tantrik er golpo",
+        "bn": "ধূমাবতীর আয়না"
+      },
+      "authorId": "auth-motijhil",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=89ICidGgoeM",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 83,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-084",
+      "slug": "abhisopto-pilsuj-taranath-tantrik-er-golpo-gj084",
+      "title": {
+        "en": "Abhisopto Pilsuj- taranath tantrik er golpo",
+        "bn": "অভিশপ্ত পিলসুজ"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=ylvsrw-QHic",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 84,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-085",
+      "slug": "pishach-prohorer-raat-taranath-tantrik-er-golpo-gj085",
+      "title": {
+        "en": "Pishach Prohorer Raat- taranath tantrik er golpo",
+        "bn": "পিশাচ প্রহরের রাতে"
+      },
+      "authorId": "auth-sukanta-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=rLKuFz4PBzM",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 85,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-086",
+      "slug": "kishorir-mrityufad-taranath-tantrik-er-golpo-gj086",
+      "title": {
+        "en": "Kishorir Mrityufad- taranath tantrik er golpo",
+        "bn": "কিশোরীর মৃত্যুফাঁদ"
+      },
+      "authorId": "auth-satyajit-adhikary",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=w29ZjYzDvLc",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 86,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-087",
+      "slug": "khaluimoler-pretprohori-taranath-tantrik-er-golpo-gj087",
+      "title": {
+        "en": "KHaluimoler Pretprohori - taranath tantrik er golpo",
+        "bn": "খালুইমলের প্রেতপ্রহরী"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Brahmokal Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=BEmulmPPppQ",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 87,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo",
+        "brahmokal-tantrik"
+      ]
+    },
+    {
+      "id": "gj-088",
+      "slug": "mahabhog-taranath-tantrik-er-golpo-gj088",
+      "title": {
+        "en": "Mahabhog - taranath tantrik er golpo",
+        "bn": "মহাভোগ"
+      },
+      "authorId": "auth-sukanta-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=Ou6CBUP4USk",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 88,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-089",
+      "slug": "kalpishacher-khudha-taranath-tantrik-er-golpo-gj089",
+      "title": {
+        "en": "Kalpishacher Khudha - taranath tantrik er golpo",
+        "bn": "কাল পিশাচের ক্ষুধা"
+      },
+      "authorId": "auth-piyasa",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=7_aRqBg22Qs",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 89,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-090",
+      "slug": "ichamotir-rokter-avishap-taranath-tantrik-er-golpo-gj090",
+      "title": {
+        "en": "Ichamotir Rokter Avishap - taranath tantrik er golpo",
+        "bn": "ইছামতীর রক্তের অভিশাপ"
+      },
+      "authorId": "auth-sameer",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=d31ULd763n8",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 90,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-091",
+      "slug": "debi-chinnomostar-krodh-taranath-tantrik-er-golpo-gj091",
+      "title": {
+        "en": "Debi Chinnomostar Krodh - taranath tantrik er golpo",
+        "bn": "দেবী ছিন্নমস্তার ক্রোধ"
+      },
+      "authorId": "auth-motijhil",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=S7pwemvpclg",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 91,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-092",
+      "slug": "ghulbondiya-chok-taranath-tantrik-er-golpo-gj092",
+      "title": {
+        "en": "Ghulbondiya Chok - taranath tantrik er golpo",
+        "bn": "ঘুলবন্দিয়া ছক"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=lNTTC3EdPm4",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 92,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-093",
+      "slug": "nishiddho-jongoler-chayapisach-taranath-tantrik-er-golpo-gj093",
+      "title": {
+        "en": "Nishiddho Jongoler Chayapisach - taranath tantrik er golpo",
+        "bn": "ছায়াপিশাচ"
+      },
+      "authorId": "auth-sukanta-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=2rlre9vCs5A",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 93,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-094",
+      "slug": "neelmonidebir-gorol-taranath-tantrik-er-golpo-gj094",
+      "title": {
+        "en": "Neelmonidebir Gorol- taranath tantrik er golpo",
+        "bn": "নীলমণি দেবীর গরল"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=MxVwZtqAsc4",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 94,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-095",
+      "slug": "kata-kalir-than-taranath-tantrik-er-golpo-gj095",
+      "title": {
+        "en": "Kata Kalir Than- taranath tantrik er golpo",
+        "bn": "কাটা কালির থান"
+      },
+      "authorId": "auth-kuhelika",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=wrArf3PoVRk",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 95,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-096",
+      "slug": "bidyutjota-hakini-taranath-tantrik-er-golpo-gj096",
+      "title": {
+        "en": "Bidyutjota Hakini - taranath tantrik er golpo",
+        "bn": "বিদ্যুৎজটা হাকিনি"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=7iwYRGcHEV8",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 96,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-097",
+      "slug": "ratnabolir-ghomtakali-taranath-tantrik-er-golpo-gj097",
+      "title": {
+        "en": "Ratnabolir Ghomtakali - taranath tantrik er golpo",
+        "bn": "রত্নাবলির ঘোমটা কালি"
+      },
+      "authorId": "auth-moumita-dey",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Brahmokal Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=Q4-H-9rCX6g",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 97,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo",
+        "brahmokal-tantrik"
+      ]
+    },
+    {
+      "id": "gj-098",
+      "slug": "kal-pishachinir-avishap-taranath-tantrik-er-golpo-gj098",
+      "title": {
+        "en": "Kal Pishachinir Avishap - taranath tantrik er golpo",
+        "bn": "কালপিশাচিনীর অভিশাপ"
+      },
+      "authorId": "auth-anik-chakraborty",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=F4m5_1ZA1LI",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 98,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-099",
+      "slug": "agnitarar-avishap-taranath-tantrik-er-golpo-gj099",
+      "title": {
+        "en": "Agnitarar Avishap  - taranath tantrik er golpo",
+        "bn": "অগ্নিতারার অভিশাপ"
+      },
+      "authorId": "auth-sukanta-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=PnP9ntmZ7ag",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 99,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    },
+    {
+      "id": "gj-100",
+      "slug": "hoimontopur-gramer-mandir-taranath-tantrik-er-golpo-gj100",
+      "title": {
+        "en": "Hoimontopur Gramer Mandir  - taranath tantrik er golpo",
+        "bn": "হৈমন্তপুর গ্রামের রহস্য"
+      },
+      "authorId": "auth-sukanta-das",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "parentStoryId": null,
+      "media": [
+        {
+          "platform": "youtube",
+          "channel": "Golper Jonyo",
+          "url": "https://www.youtube.com/watch?v=8OkpYJpQDDE",
+          "format": "audio_drama"
+        }
+      ],
+      "playlist": {
+        "id": "pl-golper-jonyo",
+        "index": 100,
+        "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB"
+      },
+      "tags": [
+        "taranath-tantrik",
+        "fan-fiction",
+        "golper-jonyo"
+      ]
+    }
+  ],
+  "playlists": [
+    {
+      "id": "pl-golper-jonyo",
+      "title": "তারানাথ তান্ত্রিকের গল্প সমগ্র | Golper Jonyo Sunday Suspense",
+      "url": "https://www.youtube.com/playlist?list=PLKRFD2awwwLFDwZ0jgllsejfkYJQLLFwB",
+      "channel": "Golper Jonyo",
+      "lineage": "fan_fiction",
+      "storyIds": [
+        "gj-001",
+        "gj-002",
+        "gj-003",
+        "gj-004",
+        "gj-005",
+        "gj-006",
+        "gj-007",
+        "gj-008",
+        "gj-009",
+        "gj-010",
+        "gj-011",
+        "gj-012",
+        "gj-013",
+        "gj-014",
+        "gj-015",
+        "gj-016",
+        "gj-017",
+        "gj-018",
+        "gj-019",
+        "gj-020",
+        "gj-021",
+        "gj-022",
+        "gj-023",
+        "gj-024",
+        "gj-025",
+        "gj-026",
+        "gj-027",
+        "gj-028",
+        "gj-029",
+        "gj-030",
+        "gj-031",
+        "gj-032",
+        "gj-033",
+        "gj-034",
+        "gj-035",
+        "gj-036",
+        "gj-037",
+        "gj-038",
+        "gj-039",
+        "gj-040",
+        "gj-041",
+        "gj-042",
+        "gj-043",
+        "gj-044",
+        "gj-045",
+        "gj-046",
+        "gj-047",
+        "gj-048",
+        "gj-049",
+        "gj-050",
+        "gj-051",
+        "gj-052",
+        "gj-053",
+        "gj-054",
+        "gj-055",
+        "gj-056",
+        "gj-057",
+        "gj-058",
+        "gj-059",
+        "gj-060",
+        "gj-061",
+        "gj-062",
+        "gj-063",
+        "gj-064",
+        "gj-065",
+        "gj-066",
+        "gj-067",
+        "gj-068",
+        "gj-069",
+        "gj-070",
+        "gj-071",
+        "gj-072",
+        "gj-073",
+        "gj-074",
+        "gj-075",
+        "gj-076",
+        "gj-077",
+        "gj-078",
+        "gj-079",
+        "gj-080",
+        "gj-081",
+        "gj-082",
+        "gj-083",
+        "gj-084",
+        "gj-085",
+        "gj-086",
+        "gj-087",
+        "gj-088",
+        "gj-089",
+        "gj-090",
+        "gj-091",
+        "gj-092",
+        "gj-093",
+        "gj-094",
+        "gj-095",
+        "gj-096",
+        "gj-097",
+        "gj-098",
+        "gj-099",
+        "gj-100"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "title": "Taranath Tantrik Samagra",
+      "title_bengali": "তারানাথ তান্ত্রিক সমগ্র",
+      "authors": [
+        "Bibhutibhushan Bandyopadhyay",
+        "Taradas Bandyopadhyay"
+      ],
+      "publisher": "Mitra & Ghosh Publishers",
+      "contents": "Omnibus of Bibhutibhushan's 2 stories, Taradas's Taranath Tantrik (1985), Alatchakra, and later editions include additional Taradas stories."
+    }
+  ],
+  "adaptations": [
+    {
+      "title": "Taranath Tantrik (Hoichoi Web Series)",
+      "director": "Q (Qaushiq Mukherjee)",
+      "year": 2019,
+      "episodes": [
+        "Taranath Tantrik",
+        "Matu Pagli",
+        "Subala",
+        "Jawrashur",
+        "Betal",
+        "Kalbhairav",
+        "Birajbala",
+        "Tarabhoirobi",
+        "Madhusundari Debi",
+        "Bathtob"
+      ],
+      "platform": "Hoichoi (subscription OTT, not YouTube)",
+      "notes": "10-episode web series based primarily on Bibhutibhushan's original stories."
+    },
+    {
+      "title": "Taranath Tantrik (Colors Bangla TV Series)",
+      "year": 2016,
+      "actor": "Tota Roy Chowdhury",
+      "platform": "Colors Bangla television"
+    },
+    {
+      "title": "Abar Taranath",
+      "author": "Trijit Kar",
+      "notes": "Fan-fiction / homage by an unrelated author; not part of the Bandyopadhyay family canon."
+    }
+  ]
+}

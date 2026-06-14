@@ -1,0 +1,19 @@
+// Keyboard focus — shift border color only; keeps each element's own border width/style
+
+@mixin focus-border {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: var(--color-accent);
+  }
+}
+
+@mixin focus-border-within {
+  &:focus-within {
+    outline: none;
+    border-color: var(--color-accent);
+  }
+}

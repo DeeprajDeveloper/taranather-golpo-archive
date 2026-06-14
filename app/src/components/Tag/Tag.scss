@@ -1,0 +1,18 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  background: var(--color-bg-inset);
+  border: var(--border-thin) solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+
+  &--accent {
+    border-color: var(--color-border-accent);
+    color: var(--color-accent-bright);
+  }
+}
