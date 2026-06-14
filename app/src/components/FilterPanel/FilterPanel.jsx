@@ -8,7 +8,16 @@ import {
 } from '../../handlers/searchFilterHandler';
 import './FilterPanel.scss';
 
-export function FilterPanel({ filters, setFilters, filterOptions, onFeedbackClick, idPrefix = '' }) {
+export function FilterPanel({
+  filters,
+  setFilters,
+  filterOptions,
+  onFeedbackClick,
+  idPrefix = '',
+  variant = 'sidebar',
+}) {
+  const stripOrientation = variant === 'drawer' ? 'horizontal' : 'vertical';
+
   const lineagePills = [
     { value: FILTER_ALL, label: 'All' },
     ...filterOptions.lineages.map(({ value, label }) => ({
@@ -31,14 +40,14 @@ export function FilterPanel({ filters, setFilters, filterOptions, onFeedbackClic
   const authorId = `${idPrefix}author-filter`;
 
   return (
-    <div className="filter-panel">
+    <div className={`filter-panel filter-panel--${variant}`}>
       <FilterStrip
         label="Lineage"
         pills={lineagePills}
         activeValues={filters.lineages}
         onToggle={(value) => setFilters((current) => handleLineageToggle(current, value))}
         ariaLabel="Filter by lineage"
-        orientation="vertical"
+        orientation={stripOrientation}
       />
       <FilterStrip
         label="Story Type"
@@ -46,7 +55,7 @@ export function FilterPanel({ filters, setFilters, filterOptions, onFeedbackClic
         activeValues={filters.storyTypes}
         onToggle={(value) => setFilters((current) => handleStoryTypeToggle(current, value))}
         ariaLabel="Filter by story type"
-        orientation="vertical"
+        orientation={stripOrientation}
       />
       <div className="filter-panel__author">
         <label className="filter-group__label" htmlFor={authorId}>

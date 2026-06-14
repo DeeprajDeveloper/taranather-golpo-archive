@@ -32,8 +32,23 @@ function serveDesignFolder() {
   }
 }
 
+function copyDesignFolder() {
+  let outDir = path.resolve(__dirname, 'dist')
+
+  return {
+    name: 'copy-design-folder',
+    configResolved(config) {
+      outDir = path.resolve(config.root, config.build.outDir)
+    },
+    closeBundle() {
+      const target = path.join(outDir, 'design')
+      fs.cpSync(designRoot, target, { recursive: true })
+    },
+  }
+}
+
 export default defineConfig({
-  plugins: [react(), serveDesignFolder()],
+  plugins: [react(), serveDesignFolder(), copyDesignFolder()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

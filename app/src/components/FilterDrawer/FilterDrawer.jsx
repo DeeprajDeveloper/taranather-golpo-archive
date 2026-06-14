@@ -59,6 +59,7 @@ export function FilterDrawer({
             filterOptions={filterOptions}
             onFeedbackClick={onFeedbackClick}
             idPrefix="drawer-"
+            variant="drawer"
           />
         </div>
       </div>

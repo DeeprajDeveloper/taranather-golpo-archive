@@ -24,12 +24,13 @@
 }
 
 @mixin content-drawer-panel($block) {
-  .#{$block}__dialog {
+  .#{$block}__dialog,
+  .#{$block}__sheet {
     max-height: var(--drawer-content-max-height);
     bottom: env(safe-area-inset-bottom, 0px);
 
     @supports (height: 100dvh) {
-      max-height: min(70dvh, 720px);
+      max-height: min(80dvh, 720px);
     }
   }
 }
