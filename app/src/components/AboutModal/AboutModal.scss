@@ -2,6 +2,7 @@
 @use '../../styles/drawer' as drawer;
 
 @include drawer.bottom-sheet-drawer('about-modal');
+@include drawer.content-drawer-panel('about-modal');
 
 .about-modal {
   position: fixed;
@@ -25,7 +26,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-height: min(90vh, 820px);
   overflow: hidden;
   background: var(--color-bg-surface);
   border-top: var(--border-thin) solid var(--color-border);
@@ -209,7 +209,6 @@
   justify-content: flex-end;
   flex-shrink: 0;
   padding: var(--space-4) var(--space-5);
-  padding-bottom: calc(var(--space-4) + env(safe-area-inset-bottom, 0px));
   border-top: var(--border-thin) solid var(--color-border);
   background: var(--color-bg-surface);
 }

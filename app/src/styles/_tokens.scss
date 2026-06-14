@@ -104,6 +104,7 @@
   --header-offset: calc(var(--header-height) + (var(--space-2) * 2));
   --search-bar-height: 44px;
   --footer-height: 44px;
+  --drawer-content-max-height: min(70vh, 720px);
 }
 
 html.header-collapsed {
