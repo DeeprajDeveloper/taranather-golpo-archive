@@ -41,7 +41,7 @@ html.header-collapsed .search-toolbar {
   display: none;
 }
 
-@media (max-width: 900px) {
+@include filter-drawer-layout {
   .page-layout {
     grid-template-columns: 1fr;
     gap: var(--space-4);

@@ -20,17 +20,23 @@ function Thumbnail({ url, title, storyId }) {
   );
 }
 
-export function StoryCard({ story }) {
+export function StoryCard({ story, isOpened = false, onOpen }) {
   const displayTags = story.tags.slice(0, 3);
+
+  const handleClick = () => {
+    onOpen?.(story.id);
+  };
 
   return (
     <a
       href={story.youtubeUrl}
-      className="story-card reveal"
+      className={`story-card reveal${isOpened ? ' story-card--opened is-visible' : ''}`}
       data-reveal
+      data-reveal-id={story.id}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={story.ariaLabel}
+      onClick={handleClick}
     >
       <Thumbnail url={story.thumbnailUrl} title={story.primaryTitle} storyId={story.id} />
       <div className="story-card__body">
@@ -54,7 +60,7 @@ export function StoryCard({ story }) {
           </div>
         ) : null}
         <span className="story-card__cta" aria-hidden="true">
-          ▶ Watch on YouTube
+          {isOpened ? '↩ Open again' : '▶ Watch on YouTube'}
         </span>
       </div>
     </a>

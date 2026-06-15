@@ -5,6 +5,7 @@ export function createDefaultFilters() {
     lineages: [ALL],
     storyTypes: [ALL],
     authorId: ALL,
+    openedStatus: ALL,
     searchQuery: '',
   };
 }
@@ -48,6 +49,16 @@ export function matchesAuthor(story, authorId) {
   return authorId === ALL || story.authorId === authorId;
 }
 
+export function matchesOpenedStatus(story, openedStatus, openedIds = new Set()) {
+  if (openedStatus === ALL) return true;
+
+  const isOpened = openedIds.has(story.id);
+  if (openedStatus === 'opened') return isOpened;
+  if (openedStatus === 'unopened') return !isOpened;
+
+  return true;
+}
+
 export function matchesSearch(story, query, authorMap = {}) {
   if (!query) return true;
 
@@ -89,7 +100,8 @@ export function isAnyFilterActive(filters) {
     Boolean(filters.searchQuery) ||
     !filters.lineages.includes(ALL) ||
     !filters.storyTypes.includes(ALL) ||
-    filters.authorId !== ALL
+    filters.authorId !== ALL ||
+    filters.openedStatus !== ALL
   );
 }
 
@@ -97,7 +109,8 @@ export function isPanelFilterActive(filters) {
   return (
     !filters.lineages.includes(ALL) ||
     !filters.storyTypes.includes(ALL) ||
-    filters.authorId !== ALL
+    filters.authorId !== ALL ||
+    filters.openedStatus !== ALL
   );
 }
 
@@ -105,7 +118,7 @@ export function shouldHideHero(filters) {
   return isAnyFilterActive(filters);
 }
 
-export function filterStories(stories, filters, authorMap = {}) {
+export function filterStories(stories, filters, authorMap = {}, openedIds = new Set()) {
   const query = normalizeQuery(filters.searchQuery);
 
   return stories.filter(
@@ -113,7 +126,8 @@ export function filterStories(stories, filters, authorMap = {}) {
       matchesSearch(story, query, authorMap) &&
       matchesLineage(story, filters.lineages) &&
       matchesStoryType(story, filters.storyTypes) &&
-      matchesAuthor(story, filters.authorId),
+      matchesAuthor(story, filters.authorId) &&
+      matchesOpenedStatus(story, filters.openedStatus, openedIds),
   );
 }
 
@@ -183,6 +197,13 @@ export function handleAuthorChange(currentFilters, authorId) {
   return {
     ...currentFilters,
     authorId: authorId || ALL,
+  };
+}
+
+export function handleOpenedStatusChange(currentFilters, value) {
+  return {
+    ...currentFilters,
+    openedStatus: value,
   };
 }
 

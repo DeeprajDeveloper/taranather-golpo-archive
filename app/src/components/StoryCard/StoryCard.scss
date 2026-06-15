@@ -127,6 +127,22 @@
   color: var(--color-text-primary);
 }
 
+.story-card--opened {
+  border-color: var(--color-border);
+
+  .story-card__thumbnail:not(.story-card__thumbnail--placeholder) {
+    filter: saturate(0.4) brightness(0.75);
+  }
+
+  .story-card__cta {
+    color: var(--color-text-secondary);
+  }
+
+  &:hover .story-card__thumbnail:not(.story-card__thumbnail--placeholder) {
+    filter: saturate(0.55) brightness(0.85);
+  }
+}
+
 .story-card.reveal {
   opacity: 0;
   transform: translateY(8px);

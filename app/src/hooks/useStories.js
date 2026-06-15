@@ -21,7 +21,7 @@ import {
 
 const SEARCH_DEBOUNCE_MS = 300;
 
-export function useStories() {
+export function useStories(openedIds = new Set()) {
   const masterData = useMemo(() => loadMasterData(), []);
   const authorMap = useMemo(
     () => buildAuthorMap(masterData.authors),
@@ -54,9 +54,9 @@ export function useStories() {
   );
 
   const filteredStories = useMemo(() => {
-    const filtered = filterStories(allStories, effectiveFilters, authorMap);
+    const filtered = filterStories(allStories, effectiveFilters, authorMap, openedIds);
     return sortStories(filtered, effectiveFilters, authorMap);
-  }, [allStories, effectiveFilters, authorMap]);
+  }, [allStories, effectiveFilters, authorMap, openedIds]);
 
   const storyCards = useMemo(
     () => filteredStories.map((story) => buildStoryCardModel(story, authorMap, typeLabels)),

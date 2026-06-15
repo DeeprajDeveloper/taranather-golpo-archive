@@ -4,6 +4,7 @@ import {
   FILTER_ALL,
   handleAuthorChange,
   handleLineageToggle,
+  handleOpenedStatusChange,
   handleStoryTypeToggle,
 } from '../../handlers/searchFilterHandler';
 import './FilterPanel.scss';
@@ -37,6 +38,12 @@ export function FilterPanel({
     ...filterOptions.authors.map(({ value, label }) => ({ value, label })),
   ];
 
+  const openedPills = [
+    { value: FILTER_ALL, label: 'All' },
+    { value: 'opened', label: 'Opened' },
+    { value: 'unopened', label: 'Not opened' },
+  ];
+
   const authorId = `${idPrefix}author-filter`;
 
   return (
@@ -55,6 +62,14 @@ export function FilterPanel({
         activeValues={filters.storyTypes}
         onToggle={(value) => setFilters((current) => handleStoryTypeToggle(current, value))}
         ariaLabel="Filter by story type"
+        orientation={stripOrientation}
+      />
+      <FilterStrip
+        label="Opened"
+        pills={openedPills}
+        activeValues={[filters.openedStatus]}
+        onToggle={(value) => setFilters((current) => handleOpenedStatusChange(current, value))}
+        ariaLabel="Filter by opened stories"
         orientation={stripOrientation}
       />
       <div className="filter-panel__author">

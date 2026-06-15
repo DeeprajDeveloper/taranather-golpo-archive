@@ -213,6 +213,60 @@
   background: var(--color-bg-surface);
 }
 
+.about-modal__history-count {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-ghost);
+}
+
+.about-modal__history-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-1);
+}
+
+.about-modal__clear-btn,
+.about-modal__clear-cancel {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  transition: var(--transition-base);
+
+  @include focus-border;
+}
+
+.about-modal__clear-btn {
+  border: var(--border-thin) solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-secondary);
+
+  &:hover {
+    border-color: var(--color-border-accent);
+    color: var(--color-text-primary);
+  }
+
+  &--confirm {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    background: var(--color-bg-elevated);
+  }
+}
+
+.about-modal__clear-cancel {
+  border: var(--border-thin) solid transparent;
+  color: var(--color-text-ghost);
+
+  &:hover {
+    color: var(--color-text-secondary);
+  }
+}
+
 .about-modal__close-btn {
   font-family: var(--font-mono);
   font-size: var(--text-xs);

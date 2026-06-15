@@ -1,3 +1,5 @@
+@use '../../styles/mixins' as *;
+
 .filter-sidebar {
   position: sticky;
   top: calc(var(--header-offset) + var(--space-4));
@@ -25,7 +27,7 @@
   margin-bottom: var(--space-5);
 }
 
-@media (max-width: 900px) {
+@include filter-drawer-layout {
   .filter-sidebar {
     display: none;
   }

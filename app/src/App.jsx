@@ -17,6 +17,7 @@ import { useScrollReveal } from './hooks/useScrollReveal';
 import { useFeedbackModal } from './hooks/useFeedbackModal';
 import { useAboutModal } from './hooks/useAboutModal';
 import { useFilterDrawer } from './hooks/useFilterDrawer';
+import { useOpenedStories } from './hooks/useOpenedStories';
 import {
   handleSearchInputChange,
   isPanelFilterActive,
@@ -40,6 +41,7 @@ function App() {
   const feedback = useFeedbackModal();
   const about = useAboutModal();
   const filterDrawer = useFilterDrawer();
+  const openedStories = useOpenedStories();
   const {
     filters,
     setFilters,
@@ -52,7 +54,7 @@ function App() {
     isEmptySearch,
     emptySearchMessage,
     filterOptions,
-  } = useStories();
+  } = useStories(openedStories.openedIds);
 
   const gridRef = useScrollReveal([storyCards.map((s) => s.id).join(',')]);
   const hasPanelFilters = isPanelFilterActive(filters);
@@ -127,7 +129,12 @@ function App() {
                 onReset={() => setFilters(resetFilters())}
               />
             ) : (
-              <StoryGrid stories={storyCards} gridRef={gridRef} />
+              <StoryGrid
+                stories={storyCards}
+                gridRef={gridRef}
+                isOpened={openedStories.isOpened}
+                onOpenStory={openedStories.markOpened}
+              />
             )}
           </div>
         </div>
@@ -163,6 +170,8 @@ function App() {
         isVisible={about.isVisible}
         isActive={about.isActive}
         onClose={about.close}
+        openedCount={openedStories.openedCount}
+        onClearOpened={openedStories.clearOpened}
       />
     </>
   );

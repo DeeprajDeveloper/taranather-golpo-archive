@@ -1,3 +1,12 @@
+// Layout breakpoints (SCSS — used in @media queries)
+$breakpoint-sidebar: 1199px;
+
+@mixin filter-drawer-layout {
+  @media (max-width: $breakpoint-sidebar) {
+    @content;
+  }
+}
+
 // Keyboard focus — shift border color only; keeps each element's own border width/style
 
 @mixin focus-border {

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { getAboutContent } from '../../handlers/aboutHandler';
 import './AboutModal.scss';
 
@@ -71,7 +72,19 @@ function SourcePill({ label, url }) {
   );
 }
 
-export function AboutModal({ isVisible, isActive, onClose }) {
+export function AboutModal({
+  isVisible,
+  isActive,
+  onClose,
+  openedCount = 0,
+  onClearOpened,
+}) {
+  const [confirmClear, setConfirmClear] = useState(false);
+
+  useEffect(() => {
+    if (!isVisible) setConfirmClear(false);
+  }, [isVisible]);
+
   if (!isVisible) return null;
 
   const {
@@ -88,6 +101,16 @@ export function AboutModal({ isVisible, isActive, onClose }) {
     originalAuthors,
     lineages,
   } = getAboutContent();
+
+  const handleClearClick = () => {
+    if (confirmClear) {
+      onClearOpened?.();
+      setConfirmClear(false);
+      return;
+    }
+
+    setConfirmClear(true);
+  };
 
   return (
     <div
@@ -211,6 +234,40 @@ export function AboutModal({ isVisible, isActive, onClose }) {
               </div>
             </section>
           ) : null}
+
+          <section className="about-modal__section">
+            <h3 className="about-modal__heading">Opened stories</h3>
+            <p className="about-modal__text">
+              Stories you open from this site are remembered on this device so you can
+              spot ones you have already visited. This stays in your browser only — not
+              on our servers.
+            </p>
+            <p className="about-modal__history-count">
+              {openedCount === 0
+                ? 'No stories marked as opened yet.'
+                : `${openedCount} ${openedCount === 1 ? 'story' : 'stories'} marked as opened.`}
+            </p>
+            {openedCount > 0 ? (
+              <div className="about-modal__history-actions">
+                <button
+                  type="button"
+                  className={`about-modal__clear-btn${confirmClear ? ' about-modal__clear-btn--confirm' : ''}`}
+                  onClick={handleClearClick}
+                >
+                  {confirmClear ? 'Confirm clear' : 'Clear opened history'}
+                </button>
+                {confirmClear ? (
+                  <button
+                    type="button"
+                    className="about-modal__clear-cancel"
+                    onClick={() => setConfirmClear(false)}
+                  >
+                    Cancel
+                  </button>
+                ) : null}
+              </div>
+            ) : null}
+          </section>
         </div>
 
         <footer className="about-modal__footer">
