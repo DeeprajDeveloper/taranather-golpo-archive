@@ -4,6 +4,7 @@ import fs from 'fs'
 import path from 'path'
 
 const designRoot = path.resolve(__dirname, '../design')
+const dataRoot = path.resolve(__dirname, '../data')
 
 function serveDesignFolder() {
   return {
@@ -32,6 +33,34 @@ function serveDesignFolder() {
   }
 }
 
+function serveDataFolder() {
+  return {
+    name: 'serve-data-folder',
+    configureServer(server) {
+      server.middlewares.use('/data', (req, res, next) => {
+        let urlPath = req.url?.split('?')[0] || '/'
+        if (urlPath === '/') {
+          next()
+          return
+        }
+
+        const filePath = path.join(dataRoot, urlPath)
+        if (!filePath.startsWith(dataRoot) || !fs.existsSync(filePath)) {
+          next()
+          return
+        }
+
+        const types = {
+          '.json': 'application/json',
+        }
+        const ext = path.extname(filePath)
+        res.setHeader('Content-Type', types[ext] || 'application/octet-stream')
+        fs.createReadStream(filePath).pipe(res)
+      })
+    },
+  }
+}
+
 function copyDesignFolder() {
   let outDir = path.resolve(__dirname, 'dist')
 
@@ -47,8 +76,22 @@ function copyDesignFolder() {
   }
 }
 
+function copyDataFolder() {
+  let outDir = path.resolve(__dirname, 'dist')
+
+  return {
+    name: 'copy-data-folder',
+    configResolved(config) {
+      outDir = path.resolve(config.root, config.build.outDir)
+    },
+    closeBundle() {
+      fs.cpSync(dataRoot, path.join(outDir, 'data'), { recursive: true })
+    },
+  }
+}
+
 export default defineConfig({
-  plugins: [react(), serveDesignFolder(), copyDesignFolder()],
+  plugins: [react(), serveDesignFolder(), serveDataFolder(), copyDesignFolder(), copyDataFolder()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

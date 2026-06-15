@@ -1,0 +1,116 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/drawer' as drawer;
+
+@include drawer.bottom-sheet-drawer('nav-drawer');
+@include drawer.content-drawer-panel('nav-drawer');
+
+.nav-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 260;
+}
+
+.nav-drawer__backdrop {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+}
+
+.nav-drawer__sheet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-surface);
+  border-top: var(--border-thin) solid var(--color-border);
+  box-shadow: var(--shadow-hover);
+}
+
+.nav-drawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-shrink: 0;
+  padding: var(--space-4) var(--space-5);
+  border-bottom: var(--border-thin) solid var(--color-border);
+}
+
+.nav-drawer__title {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0;
+}
+
+.nav-drawer__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: var(--border-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  transition: var(--transition-base);
+
+  @include focus-border;
+
+  &:hover {
+    color: var(--color-text-primary);
+    border-color: var(--color-border-accent);
+  }
+}
+
+.nav-drawer__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  overflow-y: auto;
+  padding: var(--space-4) var(--space-5) var(--space-6);
+}
+
+.nav-drawer__link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: var(--border-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition:
+    border-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out),
+    background var(--duration-fast) var(--ease-out);
+
+  @include focus-border;
+
+  &:hover {
+    border-color: var(--color-border-accent);
+    color: var(--color-text-primary);
+  }
+
+  &.is-active {
+    border-color: var(--color-border-accent);
+    background: var(--color-bg-elevated);
+    color: var(--color-text-primary);
+  }
+
+  &--action {
+    cursor: pointer;
+  }
+}

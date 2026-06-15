@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get to know the characters — Taranath Tantrik Design System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="site-header__title">
+      <span>Design System</span>
+      তারানাথের গল্প
+    </a>
+    <div class="site-header__actions">
+      <nav class="site-header__nav" aria-label="Design system pages">
+        <a href="index.html" class="site-header__nav-link">Style guide</a>
+        <a href="characters.html" class="site-header__nav-link is-active">Characters</a>
+      </nav>
+      <select id="version-select" class="version-select" aria-label="Design system version">
+        <option value="index.html" selected disabled>v3.0 - current</option>
+        <option value="v2.0/index.html">v2.0 — archive</option>
+      </select>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"/>
+          <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"/>
+          <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"/>
+          <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="characters-page-hero">
+    <p id="characters-eyebrow" class="characters-page-hero__eyebrow">আসুন, চরিত্রগুলোকে একটু কাছ থেকে জানা যাক।</p>
+    <h1 id="characters-heading" class="characters-page-hero__heading">Get to know the characters</h1>
+    <p id="characters-intro" class="characters-page-hero__intro">
+      Loading introduction…
+    </p>
+  </section>
+
+  <div id="characters-list" class="characters-list" aria-live="polite">
+    <p class="characters-loading">Loading characters…</p>
+  </div>
+
+  <footer class="site-footer container">
+    <p class="site-footer__attribution">Taranath Tantrik Design System · v3.0</p>
+    <p class="site-footer__text">
+      <a href="index.html" style="color: inherit;">← Back to style guide</a>
+    </p>
+  </footer>
+
+  <script src="scripts/theme.js"></script>
+  <script src="scripts/version-select.js"></script>
+  <script src="scripts/characters.js"></script>
+</body>
+</html>

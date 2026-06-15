@@ -20,8 +20,9 @@ function Thumbnail({ url, title, storyId }) {
   );
 }
 
-export function StoryCard({ story, isOpened = false, onOpen }) {
+export function StoryCard({ story, isOpened = false, onOpen, layout = 'vertical' }) {
   const displayTags = story.tags.slice(0, 3);
+  const isHorizontal = layout === 'horizontal';
 
   const handleClick = () => {
     onOpen?.(story.id);
@@ -30,7 +31,7 @@ export function StoryCard({ story, isOpened = false, onOpen }) {
   return (
     <a
       href={story.youtubeUrl}
-      className={`story-card reveal${isOpened ? ' story-card--opened is-visible' : ''}`}
+      className={`story-card reveal${isOpened ? ' story-card--opened is-visible' : ''}${isHorizontal ? ' story-card--horizontal' : ''}`}
       data-reveal
       data-reveal-id={story.id}
       target="_blank"

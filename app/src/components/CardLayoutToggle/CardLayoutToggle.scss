@@ -1,0 +1,48 @@
+@use '../../styles/mixins' as *;
+
+.card-layout-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: var(--color-bg-surface);
+  border: var(--border-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition:
+    border-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out);
+
+  @include focus-border;
+
+  &:hover {
+    border-color: var(--color-border-accent);
+    color: var(--color-text-primary);
+  }
+
+  &--horizontal {
+    border-color: var(--color-border-accent);
+    color: var(--color-accent);
+  }
+}
+
+.card-layout-toggle__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.card-layout-toggle__icon--rows {
+  display: none;
+}
+
+.card-layout-toggle--horizontal .card-layout-toggle__icon--grid {
+  display: none;
+}
+
+.card-layout-toggle--horizontal .card-layout-toggle__icon--rows {
+  display: block;
+}

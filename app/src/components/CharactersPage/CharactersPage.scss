@@ -1,0 +1,36 @@
+.characters-page-hero {
+  padding-top: var(--space-12) !important;
+  padding-bottom: var(--space-8) !important;
+}
+
+.characters-page-hero__eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-3);
+}
+
+.characters-page-hero__heading {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-light);
+  color: var(--color-text-primary);
+  letter-spacing: var(--tracking-tight);
+  margin: 0 0 var(--space-4);
+  line-height: var(--leading-tight);
+}
+
+.characters-page-hero__intro {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-loose);
+  max-width: var(--layout-max-width);
+  margin: 0;
+}
+
+.characters-list {
+  margin-top: var(--space-12) !important;
+  padding-bottom: var(--space-20) !important;
+}
