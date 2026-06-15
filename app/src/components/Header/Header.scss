@@ -113,6 +113,38 @@
   flex-shrink: 0;
 }
 
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.site-header__nav-link {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: var(--space-1) var(--space-2);
+  border: var(--border-thin) solid transparent;
+  border-radius: var(--radius-sm);
+  transition: color var(--duration-fast) var(--ease-out);
+
+  @include focus-border;
+
+  &:hover,
+  &.is-active {
+    color: var(--color-text-primary);
+  }
+
+  &.is-active {
+    border-color: var(--color-border);
+    background: var(--color-bg-elevated);
+    color: var(--color-text-primary);
+  }
+}
+
 .site-header__about {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
@@ -120,7 +152,7 @@
   text-transform: uppercase;
   color: var(--color-text-secondary);
   border: var(--border-thin) solid var(--color-border);
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-sm);
   padding: var(--space-1) var(--space-3);
   background: transparent;
   white-space: nowrap;
@@ -131,6 +163,41 @@
   &:hover {
     border-color: var(--color-accent);
     color: var(--color-accent);
+  }
+}
+
+.site-header__menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: var(--color-bg-surface);
+  border: var(--border-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  transition:
+    border-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out);
+
+  @include focus-border;
+
+  &:hover {
+    border-color: var(--color-border-accent);
+    color: var(--color-text-primary);
+  }
+}
+
+@include filter-drawer-layout {
+  .site-header__nav,
+  .site-header__about {
+    display: none;
+  }
+
+  .site-header__menu {
+    display: inline-flex;
   }
 }
 
@@ -159,10 +226,6 @@
   .site-header--collapsed .site-header__logo {
     width: 24px;
     height: 24px;
-  }
-
-  .site-header__about {
-    padding: var(--space-1) var(--space-2);
   }
 }
 

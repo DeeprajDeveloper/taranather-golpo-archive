@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "updatedAt": "2026-06-14",
+    "title": "Get to know the characters",
+    "eyebrow": "আসুন, চরিত্রগুলোকে একটু কাছ থেকে জানা যাক।",
+    "intro": "Taranath Tantrik stories weave together occult practitioners, restless spirits, and ordinary people caught in the supernatural. These are the figures you will meet again and again across the archive."
+  },
+  "characters": [
+    {
+      "id": "taranath-tantrik",
+      "name": {
+        "en": "Taranath Chakraborty (Taranath Tantrik)",
+        "bn": "তারানাথ চক্রবর্তী (তারানাথ তান্ত্রিক)"
+      },
+      "role": "Protagonist & narrator",
+      "tagline": "An occult practitioner who recounts adventures from his past",
+      "bio": "The central figure of the canon — a Bengali tantrik who has wandered roads the living avoid. He tells his stories with unsettling calm, as though the horrors he describes were merely errands of an ordinary day. Created by Bibhutibhushan Bandyopadhyay and expanded by his son Taradas.",
+      "traits": ["Occult", "Storyteller", "Canonical"],
+      "appearance": "Often depicted as an ageing, worldly man — unremarkable at first glance, until he begins to speak.",
+      "image": null,
+      "imageAlt": "Portrait of Taranath Chakraborty (Taranath Tantrik)"
+    },
+    {
+      "id": "jokhini",
+      "name": {
+        "en": "Jokhini",
+        "bn": "জোঁখিনী"
+      },
+      "role": "Supernatural companion",
+      "tagline": "A spirit bound to Taranath's journeys",
+      "bio": "A recurring supernatural presence in the lineage — neither fully ally nor simple foe. Jokhini embodies the liminal space between human desire and otherworldly compulsion, often appearing when Taranath crosses into territories where mortal rules no longer hold.",
+      "traits": ["Spirit", "Enigmatic", "Recurring"],
+      "appearance": "Described in shifting terms — beautiful, terrible, and always just beyond full comprehension.",
+      "image": null,
+      "imageAlt": "Portrait of Jokhini"
+    },
+    {
+      "id": "bhootnath",
+      "name": {
+        "en": "Bhootnath",
+        "bn": "ভূতনাথ"
+      },
+      "role": "Spirit familiar",
+      "tagline": "A helper from the other side",
+      "bio": "Among the spirits and servitors in Taranath's orbit, Bhootnath appears as a figure who can be petitioned — or provoked. Stories involving him often turn on bargains, warnings ignored, and the price of consulting powers one does not fully understand.",
+      "traits": ["Spirit", "Bargainer", "Omen"],
+      "appearance": "Associated with shadow, thresholds, and the moment before a ritual begins.",
+      "image": null,
+      "imageAlt": "Portrait of Bhootnath"
+    },
+    {
+      "id": "madhusundari-devi",
+      "name": {
+        "en": "Madhusundari Devi",
+        "bn": "মধুসুন্দরী দেবী"
+      },
+      "role": "Apparition",
+      "tagline": "A presence from one of the foundational tales",
+      "bio": "Madhusundari Devi's apparition is among the most remembered episodes in the original Bandyopadhyay stories — a reminder that the archive's horror is often intimate rather than cosmic. Her story is a gateway for many listeners into the wider Taranath canon.",
+      "traits": ["Apparition", "Canonical", "Foundational"],
+      "appearance": "Known through the story of her appearance rather than a fixed portrait — memory and dread take her form.",
+      "image": null,
+      "imageAlt": "Portrait of Madhusundari Devi"
+    }
+  ]
+}

@@ -21,3 +21,8 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+.card-grid--horizontal {
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
