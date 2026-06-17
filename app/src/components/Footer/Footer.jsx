@@ -58,6 +58,20 @@ function FooterIcon({ name }) {
     );
   }
 
+  if (name === 'privacy') {
+    return (
+      <svg className="site-footer__icon" viewBox="0 0 20 20" aria-hidden="true">
+        <path
+          d="M10 2a5 5 0 0 0-5 5v1H4a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-1V7a5 5 0 0 0-5-5zm-3 6V7a3 3 0 1 1 6 0v1H7z"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
+
   if (name === 'feedback') {
     return (
       <svg className="site-footer__icon" viewBox="0 0 20 20" aria-hidden="true">
@@ -108,7 +122,7 @@ function FooterIcon({ name }) {
   );
 }
 
-export function Footer({ onFeedbackClick }) {
+export function Footer({ onFeedbackClick, onPrivacyClick }) {
   const links = getFooterLinks();
 
   return (
@@ -128,12 +142,8 @@ export function Footer({ onFeedbackClick }) {
             <a
               key={link.label}
               href={link.url}
-              target='_blank'
-              className={`site-footer__action${
-                link.icon === 'github' ? ' site-footer__action--icon-only' : ''
-              }`}
+              className="site-footer__action"
               aria-label={link.label}
-              title={link.label}
               {...(link.external
                 ? { target: '_blank', rel: 'noopener noreferrer' }
                 : {})}
@@ -145,10 +155,19 @@ export function Footer({ onFeedbackClick }) {
 
           <button
             type="button"
-            className="site-footer__action site-footer__action--icon-only"
+            className="site-footer__action"
+            onClick={onPrivacyClick}
+            aria-label="Privacy policy"
+          >
+            <FooterIcon name="privacy" />
+            <span className="site-footer__action-label">Privacy</span>
+          </button>
+
+          <button
+            type="button"
+            className="site-footer__action"
             onClick={onFeedbackClick}
             aria-label="Suggest a story"
-            title="Suggest a story"
           >
             <FooterIcon name="feedback" />
             <span className="site-footer__action-label">Suggest</span>

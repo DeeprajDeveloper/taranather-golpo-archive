@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "1.0.0",
-    "updatedAt": "2026-06-14",
+    "version": "1.1.0",
+    "updatedAt": "2026-06-16",
     "title": "Get to know the characters",
     "eyebrow": "আসুন, চরিত্রগুলোকে একটু কাছ থেকে জানা যাক।",
     "intro": "Taranath Tantrik stories weave together occult practitioners, restless spirits, and ordinary people caught in the supernatural. These are the figures you will meet again and again across the archive."
@@ -13,41 +13,41 @@
         "en": "Taranath Chakraborty (Taranath Tantrik)",
         "bn": "তারানাথ চক্রবর্তী (তারানাথ তান্ত্রিক)"
       },
-      "role": "Protagonist & narrator",
+      "role": "Protagonist & Narrator",
       "tagline": "An occult practitioner who recounts adventures from his past",
-      "bio": "The central figure of the canon — a Bengali tantrik who has wandered roads the living avoid. He tells his stories with unsettling calm, as though the horrors he describes were merely errands of an ordinary day. Created by Bibhutibhushan Bandyopadhyay and expanded by his son Taradas.",
-      "traits": ["Occult", "Storyteller", "Canonical"],
-      "appearance": "Often depicted as an ageing, worldly man — unremarkable at first glance, until he begins to speak.",
+      "bio": "A mystic figure and practitioner of occult, who lives with his daughter Chari in a house on Mott Lane in central Kolkata, after having lost most of his supernatural powers because of misuse of Tantra. He is described as a man in his mid-fifties, an astrologer by profession, who has had many encounters with the supernatural in his extensive travels throughout Bengal. He shares his life experiences with two young friends - an unnamed writer (often read as Bibhutibhushan Bandyopadhyay himself, and later his son Taradas) and Kishori Sen - at his Mott Lane home over cups of tea and a pack of Passing Show cigarettes.",
+      "traits": ["Occultist", "Astrologer", "Storyteller"],
+      "appearance": "An ageing, worldly man - unremarkable at first glance, but with a certain air of mystery and wisdom when he begins to speak.",
       "image": null,
-      "imageAlt": "Portrait of Taranath Chakraborty (Taranath Tantrik)"
+      "imageAlt": "Portrait of Taranath Chakraborty"
     },
     {
-      "id": "jokhini",
+      "id": "chari",
       "name": {
-        "en": "Jokhini",
-        "bn": "জোঁখিনী"
+        "en": "Chari",
+        "bn": "চারি"
       },
-      "role": "Supernatural companion",
-      "tagline": "A spirit bound to Taranath's journeys",
-      "bio": "A recurring supernatural presence in the lineage — neither fully ally nor simple foe. Jokhini embodies the liminal space between human desire and otherworldly compulsion, often appearing when Taranath crosses into territories where mortal rules no longer hold.",
-      "traits": ["Spirit", "Enigmatic", "Recurring"],
-      "appearance": "Described in shifting terms — beautiful, terrible, and always just beyond full comprehension.",
+      "role": "Taranath's daughter",
+      "tagline": "The quiet anchor of the Mott Lane household",
+      "bio": "Chari is Taranath's only daughter and constant companion in his old house on Mott Lane. After the death of her mother, she keeps the household running while her father retreats into astrology, memory, and the occult. In Bibhutibhushan's frame narrative she is described as a pretty but strange young woman - practical where Taranath is abstract, present yet slightly apart from the adda of tea, cigarettes, and ghost stories that unfolds in their parlour. She rarely speaks in the stories themselves, but her presence defines the domestic world from which Taranath's tales depart.",
+      "traits": ["Daughter", "Household", "Enigmatic"],
+      "appearance": "A young woman of unsettling beauty - often in the background of the Mott Lane rooms, watchful and composed.",
       "image": null,
-      "imageAlt": "Portrait of Jokhini"
+      "imageAlt": "Portrait of Chari"
     },
     {
-      "id": "bhootnath",
+      "id": "kishori-sen",
       "name": {
-        "en": "Bhootnath",
-        "bn": "ভূতনাথ"
+        "en": "Kishori Sen",
+        "bn": "কিশোরী সেন"
       },
-      "role": "Spirit familiar",
-      "tagline": "A helper from the other side",
-      "bio": "Among the spirits and servitors in Taranath's orbit, Bhootnath appears as a figure who can be petitioned — or provoked. Stories involving him often turn on bargains, warnings ignored, and the price of consulting powers one does not fully understand.",
-      "traits": ["Spirit", "Bargainer", "Omen"],
-      "appearance": "Associated with shadow, thresholds, and the moment before a ritual begins.",
+      "role": "Listener & companion",
+      "tagline": "The friend who visits with cigarettes and scepticism",
+      "bio": "Kishori Sen is one of the two young men who regularly visit Taranath's Mott Lane home. Together with the unnamed writer-narrator, he brings Passing Show cigarettes and prompts the tantrik to recount his past - journeys across rural Bengal, encounters with spirits, gurus, and forces beyond ordinary understanding. Kishori and the writer are rationalists by temperament; they doubt, question, and sometimes mock what they hear, yet they return again and again. Their visits supply the frame for nearly every story in the canon: rain over Kolkata, tea on the table, and Taranath's voice drawing them into another world.",
+      "traits": ["Listener", "Sceptic", "Companion"],
+      "appearance": "A young Bengali man of the city - curious, informal, more comfortable with doubt than with devotion.",
       "image": null,
-      "imageAlt": "Portrait of Bhootnath"
+      "imageAlt": "Portrait of Kishori Sen"
     },
     {
       "id": "madhusundari-devi",
@@ -55,13 +55,56 @@
         "en": "Madhusundari Devi",
         "bn": "মধুসুন্দরী দেবী"
       },
-      "role": "Apparition",
-      "tagline": "A presence from one of the foundational tales",
-      "bio": "Madhusundari Devi's apparition is among the most remembered episodes in the original Bandyopadhyay stories — a reminder that the archive's horror is often intimate rather than cosmic. Her story is a gateway for many listeners into the wider Taranath canon.",
-      "traits": ["Apparition", "Canonical", "Foundational"],
-      "appearance": "Known through the story of her appearance rather than a fixed portrait — memory and dread take her form.",
+      "role": "Supernatural beloved",
+      "tagline": "The apparition by the Barakar river",
+      "bio": "Madhusundari Devi appears in one of Bibhutibhushan's two foundational Taranath stories, Madhusundari Debi'r Abirbhab. Taranath recalls a period of three months spent beside the Barakar river in western Bengal, where he called her forth as a lover in a desolate landscape of winter water, moonlight, and forest. She visited him every night - a presence he describes not as an ordinary woman but as a goddess granting joy and companionship beyond anything earthly. When the idyll ended, the loss left him unable to recover the self that had known such happiness. Her story is among the most remembered in the entire series, and a gateway for many readers into Taranath's world.",
+      "traits": ["Apparition", "Canonical", "Beloved"],
+      "appearance": "Known through memory and longing rather than a fixed portrait - associated with river-banks, moonlit winter, and an intimacy that feels heavenly rather than human.",
       "image": null,
-      "imageAlt": "Portrait of Madhusundari Devi"
+      "imageAlt": "Portrait of Madhusundari Devi",
+      "contextVideo": {
+        "url": "https://www.youtube.com/watch?v=8dbsivzU7gk",
+        "title": "About Madhusundari Devi",
+        "description": "Taranath recounts how he came to know her beside the Barakar river - the story that first brought her into the canon."
+      }
+    },
+    {
+      "id": "matu-pagli",
+      "name": {
+        "en": "Matu Pagli",
+        "bn": "মাতু পাগলী"
+      },
+      "role": "First guru",
+      "tagline": "The mysterious woman of Birbhum who initiated Taranath",
+      "bio": "Matu Pagli is Taranath's first guru in the art of tantra - a figure he recalls while describing his early struggles to learn occult practice. Associated with Birbhum in western Bengal, she appears in the sub-narrative embedded within Taranath Tantrik-er Golpo and was later expanded in adaptations by Taradas Bandyopadhyay and the Hoichoi web series. Her name suggests both motherhood and madness: a woman at the margins of society who holds knowledge the respectable world refuses. Taranath's encounter with her marks the beginning of a lifelong entanglement with powers he would never fully master.",
+      "traits": ["Guru", "Tantric", "Birbhum"],
+      "appearance": "A formidable rural woman - unsettling, authoritative, and tied to the landscapes of Birbhum rather than the parlours of Kolkata.",
+      "image": null,
+      "imageAlt": "Portrait of Matu Pagli",
+      "contextVideo": {
+        "url": "https://www.youtube.com/watch?v=Ek-feRBQ3FE",
+        "title": "About Matu Pagli",
+        "description": "Taranath recounts how he came to know her in Birbhum."
+      }
+    },
+    {
+      "id": "swineherd-mystic",
+      "name": {
+        "en": "The Swineherd Mystic",
+        "bn": "কইখালির অদ্ভুত লোক"
+      },
+      "role": "Hidden mahapurush",
+      "tagline": "The nameless man beneath the chotka tree in Amar Jiban",
+      "bio": "In Taradas Bandyopadhyay's Amar Jiban, Taranath recalls a boyhood afternoon at the edge of his village - a blazing field by Koi Khal where a bare-chested man sat beneath a chotka tree, tending pigs that were not ordinary swine but the outward form of human failings. He told the child he had been sent to meet him alone, read his forehead, and opened a vision of cosmic creation through his unbearably bright eyes - leaving Taranath with a melancholy he would never lose. Years later, when a tantric guru studied Taranath's palm, he said the boy had already met a liberated mahapurush without recognising him. Taranath thought at once of this stranger.",
+      "traits": ["Mystic", "Amar Jiban", "Mahapurush"],
+      "appearance": "A dark, compact man of startling vitality - bare-bodied, bone wand in hand, eyes too brilliant to hold; outwardly no different from any village swineherd until he speaks.",
+      "image": null,
+      "imageAlt": "The swineherd mystic of Koi Khal",
+      "contextVideo": {
+        "url": "https://www.youtube.com/watch?v=tg8YJ73Tz9k",
+        "title": "Amar Jiban",
+        "description": "Taranath recounts the childhood encounter that marked his life as unlike any other - Taradas Bandyopadhyay's Amar Jiban, adapted for Mirchi Bangla."
+      }
     }
   ]
 }

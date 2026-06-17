@@ -22,9 +22,9 @@
         <a href="characters.html" class="site-header__nav-link is-active">Characters</a>
       </nav>
       <select id="version-select" class="version-select" aria-label="Design system version">
-        <option value="index.html" selected disabled>v4.0 — current</option>
-        <option value="v3.0/index.html">v3.0 — archive</option>
-        <option value="v2.0/index.html">v2.0 — archive</option>
+        <option value="../index.html">v4.0 — current</option>
+        <option value="index.html" selected disabled>v3.0 — archive</option>
+        <option value="../v2.0/index.html">v2.0 — archive</option>
       </select>
       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
         <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
@@ -42,48 +42,23 @@
           <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"/>
         </svg>
       </button>
-      <button id="nav-menu-toggle" class="site-header__menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-          <line x1="4" y1="7" x2="20" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="4" y1="17" x2="20" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </button>
     </div>
   </header>
-
-  <div id="nav-drawer" class="nav-drawer" hidden>
-    <button type="button" class="nav-drawer__backdrop" data-nav-close aria-label="Close menu"></button>
-    <div class="nav-drawer__sheet" role="dialog" aria-modal="true" aria-labelledby="nav-drawer-title">
-      <header class="nav-drawer__header">
-        <h2 id="nav-drawer-title" class="nav-drawer__title">Menu</h2>
-        <button type="button" class="nav-drawer__close" data-nav-close aria-label="Close menu">×</button>
-      </header>
-      <nav class="nav-drawer__body" aria-label="Site sections">
-        <a href="index.html" class="nav-drawer__link">Style guide</a>
-        <a href="characters.html" class="nav-drawer__link is-active">Characters</a>
-      </nav>
-    </div>
-  </div>
 
   <section class="characters-page-hero">
     <p id="characters-eyebrow" class="characters-page-hero__eyebrow">আসুন, চরিত্রগুলোকে একটু কাছ থেকে জানা যাক।</p>
     <h1 id="characters-heading" class="characters-page-hero__heading">Get to know the characters</h1>
-    <p id="characters-intro" class="characters-page-hero__intro">Loading introduction…</p>
+    <p id="characters-intro" class="characters-page-hero__intro">
+      Loading introduction…
+    </p>
   </section>
 
-  <div id="characters-layout" class="characters-layout" aria-live="polite">
-    <nav class="character-nav" aria-label="Characters">
-      <p class="character-nav__label">Characters</p>
-      <ul id="character-nav-list" class="character-nav__list"></ul>
-    </nav>
-    <div id="characters-detail" class="characters-detail">
-      <p class="characters-loading">Loading characters…</p>
-    </div>
+  <div id="characters-list" class="characters-list" aria-live="polite">
+    <p class="characters-loading">Loading characters…</p>
   </div>
 
   <footer class="site-footer container">
-    <p class="site-footer__attribution">Taranath Tantrik Design System · v4.0</p>
+    <p class="site-footer__attribution">Taranath Tantrik Design System · v3.0</p>
     <p class="site-footer__text">
       <a href="index.html" style="color: inherit;">← Back to style guide</a>
     </p>
@@ -91,7 +66,6 @@
 
   <script src="scripts/theme.js"></script>
   <script src="scripts/version-select.js"></script>
-  <script src="scripts/nav-drawer.js"></script>
   <script src="scripts/characters.js"></script>
 </body>
 </html>

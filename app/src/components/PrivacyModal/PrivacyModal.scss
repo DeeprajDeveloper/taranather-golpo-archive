@@ -1,0 +1,219 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/drawer' as drawer;
+
+@include drawer.bottom-sheet-drawer('privacy-modal');
+@include drawer.content-drawer-panel('privacy-modal');
+
+.privacy-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+}
+
+.privacy-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  border: none;
+  cursor: pointer;
+}
+
+.privacy-modal__dialog {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background: var(--color-bg-surface);
+  border-top: var(--border-thin) solid var(--color-border);
+  box-shadow: var(--shadow-hover);
+}
+
+.privacy-modal__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-shrink: 0;
+  padding: var(--space-4) var(--space-5);
+  border-bottom: var(--border-thin) solid var(--color-border);
+}
+
+.privacy-modal__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-2);
+}
+
+.privacy-modal__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-regular);
+  color: var(--color-text-primary);
+  line-height: var(--leading-snug);
+}
+
+.privacy-modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--color-text-secondary);
+  border: var(--border-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  transition: var(--transition-base);
+
+  @include focus-border;
+
+  &:hover {
+    color: var(--color-text-primary);
+    border-color: var(--color-border-accent);
+  }
+}
+
+.privacy-modal__body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.privacy-modal__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.privacy-modal__heading {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-primary);
+  line-height: var(--leading-snug);
+}
+
+.privacy-modal__lead,
+.privacy-modal__text {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-loose);
+}
+
+.privacy-modal__lead {
+  color: var(--color-text-primary);
+}
+
+.privacy-modal__inline-link {
+  color: var(--color-accent-bright);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--duration-fast) var(--ease-out);
+
+  &:hover {
+    color: var(--color-text-primary);
+  }
+}
+
+.privacy-modal__list {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-loose);
+  padding-left: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.privacy-modal__sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.privacy-modal__source-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 32px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-pill);
+  border: var(--border-thin) solid var(--color-border);
+  background: var(--color-bg-surface);
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: var(--transition-base);
+
+  &--link {
+    text-decoration: none;
+
+    @include focus-border;
+
+    &:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+      background: var(--color-bg-elevated);
+    }
+  }
+}
+
+.privacy-modal__source-icon {
+  flex-shrink: 0;
+  opacity: 0.75;
+}
+
+.privacy-modal__source-pill--link:hover .privacy-modal__source-icon {
+  opacity: 1;
+}
+
+.privacy-modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  padding: var(--space-4) var(--space-5);
+  border-top: var(--border-thin) solid var(--color-border);
+  background: var(--color-bg-surface);
+}
+
+.privacy-modal__close-btn {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  border: var(--border-thin) solid var(--color-accent);
+  background: var(--color-bg-elevated);
+  color: var(--color-accent);
+  transition: var(--transition-base);
+
+  @include focus-border;
+
+  &:hover {
+    color: var(--color-text-primary);
+    border-color: var(--color-accent-bright);
+  }
+}
+
+@media (max-width: 600px) {
+  .privacy-modal__close-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

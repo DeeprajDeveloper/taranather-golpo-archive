@@ -7,6 +7,8 @@ export function FilterStrip({
   pills,
   activeValues,
   onToggle,
+  onClear,
+  showClear = false,
   ariaLabel,
   orientation = 'horizontal',
 }) {
@@ -15,7 +17,21 @@ export function FilterStrip({
 
   return (
     <div className="filter-group">
-      {label ? <span className="filter-group__label">{label}</span> : null}
+      {label || showClear ? (
+        <div className="filter-group__header">
+          {label ? <span className="filter-group__label">{label}</span> : <span />}
+          {showClear && onClear ? (
+            <button
+              type="button"
+              className="filter-group__clear"
+              onClick={onClear}
+              aria-label={`Clear ${label} filter`}
+            >
+              Clear
+            </button>
+          ) : null}
+        </div>
+      ) : null}
       <div className={stripClass} role="group" aria-label={ariaLabel}>
         {pills.map((pill) => (
           <FilterPill

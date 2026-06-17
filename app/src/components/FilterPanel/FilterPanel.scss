@@ -2,6 +2,35 @@
   margin-top: var(--space-2);
 }
 
+.filter-panel__clear-all {
+  display: block;
+  width: 100%;
+  margin-bottom: var(--space-4);
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: var(--border-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition:
+    border-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out);
+
+  &:hover {
+    border-color: var(--color-border-accent);
+    color: var(--color-accent);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
 .filter-panel--sidebar .filter-select {
   max-width: none;
   width: 100%;

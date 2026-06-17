@@ -1,29 +1,9 @@
 import { Tag } from '../Tag/Tag';
 import './CharacterEntry.scss';
 
-function CharacterImage({ image, imageAlt }) {
-  if (image) {
-    return (
-      <img
-        className="character-entry__image"
-        src={image}
-        alt={imageAlt}
-        loading="lazy"
-      />
-    );
-  }
-
-  return (
-    <div className="character-entry__image character-entry__image--placeholder" aria-hidden="true">
-      <span>Portrait</span>
-    </div>
-  );
-}
-
 export function CharacterEntry({ character }) {
   return (
     <article className="character-entry" id={character.id}>
-      <CharacterImage image={character.image} imageAlt={character.imageAlt} />
       <div className="character-entry__content">
         <p className="character-entry__role">{character.role}</p>
         <h2 className="character-entry__name">
@@ -43,6 +23,28 @@ export function CharacterEntry({ character }) {
           </div>
         ) : null}
         <p className="character-entry__appearance">{character.appearance}</p>
+        {character.contextVideo ? (
+          <aside className="character-entry__context">
+            <span className="character-entry__context-label">Story context</span>
+            <a
+              href={character.contextVideo.url}
+              className="character-entry__context-card"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${character.contextVideo.title} — watch on YouTube (opens in a new tab)`}
+            >
+              <span className="character-entry__context-title">{character.contextVideo.title}</span>
+              {character.contextVideo.description ? (
+                <span className="character-entry__context-description">
+                  {character.contextVideo.description}
+                </span>
+              ) : null}
+              <span className="character-entry__context-cta" aria-hidden="true">
+                ▶ Watch on YouTube
+              </span>
+            </a>
+          </aside>
+        ) : null}
       </div>
     </article>
   );

@@ -16,6 +16,13 @@ export function buildCharacterEntryModel(character) {
     appearance: character.appearance,
     image: character.image || null,
     imageAlt: character.imageAlt || character.name.en,
+    contextVideo: character.contextVideo?.url
+      ? {
+          url: character.contextVideo.url,
+          title: character.contextVideo.title || `About ${character.name.en}`,
+          description: character.contextVideo.description || null,
+        }
+      : null,
   };
 }
 

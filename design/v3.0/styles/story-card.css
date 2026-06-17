@@ -1,0 +1,194 @@
+.story-card {
+  background: var(--color-bg-surface);
+  border: var(--border-thin) solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-base);
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  width: 100%;
+  max-width: var(--story-card-width);
+}
+
+.story-card:hover {
+  border-color: var(--color-border-accent);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-1px);
+}
+
+.story-card__thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.6) brightness(0.85);
+  transition: filter var(--duration-slow) var(--ease-out);
+}
+
+.story-card__thumbnail--placeholder {
+  background: linear-gradient(135deg, var(--color-bg-inset) 0%, var(--color-bg-elevated) 50%, var(--color-bg-inset) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: none;
+}
+
+.story-card__thumbnail--placeholder span {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-ghost);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.story-card:hover .story-card__thumbnail {
+  filter: saturate(0.8) brightness(0.95);
+}
+
+.story-card:hover .story-card__thumbnail--placeholder {
+  filter: none;
+}
+
+.story-card__body {
+  padding: var(--space-5) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.story-card__meta {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.story-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-regular);
+  color: var(--color-text-primary);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  margin: 0;
+}
+
+.story-card__subtitle {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.story-card__description {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  margin: 0;
+}
+
+.story-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-top: var(--space-1);
+}
+
+.story-card__tags .tag {
+  font-size: 0.625rem;
+  padding: 2px var(--space-2);
+  letter-spacing: 0.06em;
+}
+
+.story-card__cta {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-accent-bright);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.story-card__cta:hover {
+  color: var(--color-text-primary);
+}
+
+.story-card.reveal {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity var(--duration-slow) var(--ease-out),
+              transform var(--duration-slow) var(--ease-out);
+}
+
+.story-card.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .story-card.reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Horizontal card layout */
+.card-grid--horizontal {
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.story-card--horizontal {
+  display: grid;
+  grid-template-columns: minmax(120px, 200px) 1fr;
+  max-width: none;
+  align-items: stretch;
+}
+
+.story-card--horizontal .story-card__thumbnail {
+  aspect-ratio: auto;
+  height: 100%;
+  min-height: 140px;
+  object-fit: cover;
+}
+
+.story-card--horizontal .story-card__body {
+  justify-content: center;
+}
+
+.card-grid--horizontal .card-skeleton {
+  display: grid;
+  grid-template-columns: minmax(120px, 200px) 1fr;
+  max-width: none;
+}
+
+.card-grid--horizontal .card-skeleton__image {
+  aspect-ratio: auto;
+  min-height: 140px;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .story-card--horizontal {
+    grid-template-columns: 96px 1fr;
+  }
+
+  .story-card--horizontal .story-card__thumbnail {
+    min-height: 108px;
+  }
+
+  .story-card--horizontal .story-card__description {
+    display: none;
+  }
+}

@@ -7,10 +7,10 @@ export function Hero({ storyCountLabel, isHidden }) {
       aria-label="Site introduction"
     >
       <h1 className="page-hero__heading">
-        <em>Stories of Taranath Tantrik | Exploring the Unknown, Dread & Mystery</em>
+        <em>Stories of Taranath Tantrik - Explore the Mysteries of the Tantric Tradition</em>
       </h1>
       <p className="page-hero__subtext">
-        He has walked roads the living avoid. These are the stories he brought back.
+        Taranath Tantrik has walked roads the living avoid. These are the stories he brought back.
       </p>
       <span className="page-hero__count">{storyCountLabel}</span>
     </section>

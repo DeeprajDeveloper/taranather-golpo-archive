@@ -4,6 +4,14 @@
   margin-bottom: var(--space-4);
 }
 
+.filter-group__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
 .filter-group__label {
   display: block;
   font-family: var(--font-mono);
@@ -11,7 +19,27 @@
   letter-spacing: var(--tracking-wider);
   text-transform: uppercase;
   color: var(--color-text-ghost);
-  margin-bottom: var(--space-2);
+  margin-bottom: 0;
+}
+
+.filter-group__clear {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-ghost);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color var(--duration-fast) var(--ease-out);
+
+  @include focus-border;
+
+  &:hover {
+    color: var(--color-accent);
+  }
 }
 
 .filter-strip {

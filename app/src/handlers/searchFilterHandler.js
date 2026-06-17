@@ -172,6 +172,64 @@ export function resetFilters() {
   return createDefaultFilters();
 }
 
+export function isLineageFilterActive(lineages) {
+  return !lineages.includes(ALL);
+}
+
+export function isStoryTypeFilterActive(storyTypes) {
+  return !storyTypes.includes(ALL);
+}
+
+export function isOpenedFilterActive(openedStatus) {
+  return openedStatus !== ALL;
+}
+
+export function isAuthorFilterActive(authorId) {
+  return authorId !== ALL;
+}
+
+export function clearLineageFilter(currentFilters) {
+  return {
+    ...currentFilters,
+    lineages: [ALL],
+  };
+}
+
+export function clearStoryTypeFilter(currentFilters) {
+  return {
+    ...currentFilters,
+    storyTypes: [ALL],
+  };
+}
+
+export function clearOpenedFilter(currentFilters) {
+  return {
+    ...currentFilters,
+    openedStatus: ALL,
+  };
+}
+
+export function clearAuthorFilter(currentFilters) {
+  return {
+    ...currentFilters,
+    authorId: ALL,
+  };
+}
+
+export function clearPanelFilters(currentFilters) {
+  return {
+    ...currentFilters,
+    lineages: [ALL],
+    storyTypes: [ALL],
+    authorId: ALL,
+    openedStatus: ALL,
+  };
+}
+
+export function clearAllFilters() {
+  return resetFilters();
+}
+
 export function handleSearchInputChange(currentFilters, value) {
   return {
     ...currentFilters,

@@ -16,6 +16,8 @@ import { useOpenedStories } from './hooks/useOpenedStories';
 import { useCardLayout } from './hooks/useCardLayout';
 import { useAppRoute } from './hooks/useAppRoute';
 import { useCharacters } from './hooks/useCharacters';
+import { PrivacyModal } from './components/PrivacyModal/PrivacyModal';
+import { usePrivacyModal } from './hooks/usePrivacyModal';
 import './App.scss';
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
   const { isScrolled, showBackToTop } = useHeaderScroll();
   const feedback = useFeedbackModal();
   const about = useAboutModal();
+  const privacy = usePrivacyModal();
   const filterDrawer = useFilterDrawer();
   const openedStories = useOpenedStories();
   const cardLayout = useCardLayout();
@@ -88,7 +91,7 @@ function App() {
         />
       )}
 
-      <Footer onFeedbackClick={feedback.open} />
+      <Footer onFeedbackClick={feedback.open} onPrivacyClick={privacy.open} />
       <BackToTop visible={showBackToTop} />
 
       <FeedbackModal
@@ -110,6 +113,12 @@ function App() {
         onClose={about.close}
         openedCount={openedStories.openedCount}
         onClearOpened={openedStories.clearOpened}
+      />
+
+      <PrivacyModal
+        isVisible={privacy.isVisible}
+        isActive={privacy.isActive}
+        onClose={privacy.close}
       />
     </>
   );
