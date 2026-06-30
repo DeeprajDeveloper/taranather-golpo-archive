@@ -6,6 +6,7 @@ import { FilterSidebar } from '../FilterSidebar/FilterSidebar';
 import { SectionLabel } from '../SectionLabel/SectionLabel';
 import { StoryGrid } from '../StoryGrid/StoryGrid';
 import { EmptyState } from '../EmptyState/EmptyState';
+import { LoadMoreButton } from '../LoadMoreButton/LoadMoreButton';
 import {
   handleSearchInputChange,
   isPanelFilterActive,
@@ -26,6 +27,9 @@ export function HomePage({
   filters,
   setFilters,
   storyCards,
+  hasMoreStories,
+  loadMoreStories,
+  loadMoreLabel,
   resultsLabel,
   storyCountLabel,
   heroHidden,
@@ -102,13 +106,22 @@ export function HomePage({
                 onReset={() => setFilters(resetFilters())}
               />
             ) : (
-              <StoryGrid
-                stories={storyCards}
-                gridRef={gridRef}
-                layout={cardLayout.layout}
-                isOpened={openedStories.isOpened}
-                onOpenStory={openedStories.markOpened}
-              />
+              <>
+                <StoryGrid
+                  stories={storyCards}
+                  gridRef={gridRef}
+                  layout={cardLayout.layout}
+                  isOpened={openedStories.isOpened}
+                  onOpenStory={openedStories.markOpened}
+                />
+                {hasMoreStories ? (
+                  <LoadMoreButton
+                    label={loadMoreLabel.button}
+                    status={loadMoreLabel.status}
+                    onClick={loadMoreStories}
+                  />
+                ) : null}
+              </>
             )}
           </div>
         </div>

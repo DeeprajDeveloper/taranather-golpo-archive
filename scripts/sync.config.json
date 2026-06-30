@@ -1,0 +1,25 @@
+{
+  "dataPath": "data/master_data.json",
+  "playlists": {
+    "pl-golper-jonyo": {
+      "idPrefix": "gj",
+      "defaultAuthorId": "auth-golper-jonyo-team",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "tags": ["taranath-tantrik", "fan-fiction", "golper-jonyo"],
+      "channel": "Golper Jonyo",
+      "format": "audio_drama"
+    },
+    "pl-rajprataper-thek": {
+      "idPrefix": "rpt",
+      "defaultAuthorId": "auth-rajprataper-thek-team",
+      "lineage": "fan_fiction",
+      "storyType": "fan_fiction",
+      "series": "Taranath Tantrik",
+      "tags": ["rajprataper-thek", "fan-fiction", "taranath-tantrik"],
+      "channel": "Rajprataper Thek",
+      "format": "audio_drama"
+    }
+  }
+}

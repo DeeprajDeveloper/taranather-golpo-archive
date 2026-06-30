@@ -27,3 +27,4 @@ dist-ssr
 _archive/
 .instructions/
 .vscode/
+.env
