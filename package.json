@@ -1,0 +1,12 @@
+{
+  "name": "taranather-golpo-archive",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "sync:youtube": "node scripts/sync-youtube-stories.js",
+    "sync:youtube:dry-run": "node scripts/sync-youtube-stories.js --dry-run"
+  }
+}

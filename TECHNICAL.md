@@ -192,6 +192,32 @@ VITE_FEEDBACK_EMAIL=your@email.com
 
 If unset, the feedback form still validates but cannot generate a mailto URL.
 
+| `YOUTUBE_API_KEY` | `scripts/sync-youtube-stories.js` | YouTube Data API key for playlist sync (repo root `.env`) |
+
+## YouTube data sync
+
+A standalone Node script refreshes `data/master_data.json` from configured YouTube playlists. It does not touch the React app.
+
+From the **repository root**:
+
+```bash
+cp .env.example .env   # add YOUTUBE_API_KEY
+npm run sync:youtube:dry-run
+npm run sync:youtube -- --write
+```
+
+Behavior:
+
+- Reads playlist URLs from `master_data.json` → `playlists[]`
+- Per-playlist defaults live in `scripts/sync.config.json` (id prefix, tags, fallback author)
+- Fetches all playlist items via YouTube Data API v3
+- **Adds** stories for videos not yet in the catalog (matched by video ID)
+- **Updates** playlist index when order shifts
+- **Warns** when an index slot points to a different video (manual review)
+- Recomputes `meta.stats` and `meta.updatedAt` on `--write`
+
+New Golper Jonyo entries get a review note; edit author/title before committing.
+
 ## Scripts
 
 From `app/`:
@@ -202,6 +228,13 @@ From `app/`:
 | `npm run build` | Production build to `app/dist/` |
 | `npm run preview` | Preview production build |
 | `npm run lint` | ESLint |
+
+From the **repository root**:
+
+| Command | Description |
+|---|---|
+| `npm run sync:youtube:dry-run` | Preview new YouTube playlist stories |
+| `npm run sync:youtube -- --write` | Write updates to `data/master_data.json` |
 
 ## Path aliases
 

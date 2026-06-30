@@ -8,6 +8,7 @@ import { AboutModal } from './components/AboutModal/AboutModal';
 import { useTheme } from './hooks/useTheme';
 import { useHeaderScroll } from './hooks/useHeaderScroll';
 import { useStories } from './hooks/useStories';
+import { useStoryPagination } from './hooks/useStoryPagination';
 import { useScrollReveal } from './hooks/useScrollReveal';
 import { useFeedbackModal } from './hooks/useFeedbackModal';
 import { useAboutModal } from './hooks/useAboutModal';
@@ -46,8 +47,10 @@ function App() {
     filterOptions,
   } = useStories(openedStories.openedIds);
 
+  const pagination = useStoryPagination(storyCards);
+
   const gridRef = useScrollReveal([
-    storyCards.map((s) => s.id).join(','),
+    pagination.visibleStories.map((s) => s.id).join(','),
     cardLayout.layout,
   ]);
 
@@ -75,7 +78,10 @@ function App() {
         <HomePage
           filters={filters}
           setFilters={setFilters}
-          storyCards={storyCards}
+          storyCards={pagination.visibleStories}
+          hasMoreStories={pagination.hasMore}
+          loadMoreStories={pagination.loadMore}
+          loadMoreLabel={pagination.loadMoreLabel}
           resultsLabel={resultsLabel}
           storyCountLabel={storyCountLabel}
           heroHidden={heroHidden}
